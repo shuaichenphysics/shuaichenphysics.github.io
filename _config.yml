@@ -1,7 +1,7 @@
 # Site
-title:              shuaichenphysics
+title:              refraction-ray
 bio:                'Hello world'
-description:        "Random walk in universe of physics"
+description:        "Blog of thoughs and archive of experience"
 # reading_time:       true
 # words_per_minute:   150
 logo:               'assets/img/logo.png'
@@ -30,13 +30,13 @@ sass:
 compress_html:
   blanklines:       true
 # Comments
-disqus_shortname:   shuaichenphysics-com
+disqus_shortname:   refraction-ray-disqus-com
 
 # Social
 # if you don't have any of social below, comment the line.
-#google:
+google:
   #plus:            #username
-  #analytics:        UA-112004850-1
+  analytics:        UA-112004850-1
   #verify:
   #ad-client:
   #ad-slot:
