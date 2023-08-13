@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Generalized Inverse"
-date: 2018-01-06
+date: 2022-05-07
 excerpt: "Generalized inverse, or Moore-Penrose inverse"
 tags: [Math]
 comments: true
