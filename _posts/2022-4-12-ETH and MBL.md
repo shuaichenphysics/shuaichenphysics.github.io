@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Eigenstate thermalization hypnosis and many-body localization"
+title: "Eigenstate thermalization hypothesis and many-body localization"
 date: 2022-4-12
 excerpt: "How to reconcile between statistics and the quantum mechanism is always elusive"
 tags: [Statistics, quantum mechanism]
