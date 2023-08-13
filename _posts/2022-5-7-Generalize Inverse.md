@@ -6,7 +6,7 @@ excerpt: "Generalized inverse, or Moore-Penrose inverse"
 tags: [Math]
 comments: true
 ---
-$
+
 * toc
 {:toc}
 
@@ -16,7 +16,7 @@ In practice, I come across a problem with taking a derivative of an eigenvector.
 
 $$
 H(\alpha )\mathbf v(\alpha )=E(\alpha)\mathbf v(\alpha)
-\label{eigeneq} 
+\label{eigeneq1} 
 $$
 
 a question comes how to calculate the derivative $$\partial_\alpha\mathbf v(\alpha )$$ efficiently. One naive method is to find $$v(\alpha+\delta \alpha )$$, such that $$\partial_\alpha \mathbf v(\alpha)=[\mathbf v(\alpha+\delta\alpha)-\mathbf v(\alpha)]/\delta\alpha$$ is obtained directly by the definition. Such a scheme generates errors and we have to determine which eigenvector is targeted for $$H(\alpha+\
