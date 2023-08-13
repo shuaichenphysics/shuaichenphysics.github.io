@@ -1,7 +1,7 @@
 # Site
-title:              refraction-ray
+title:              Shuai Aris Chen
 bio:                'Hello world'
-description:        "Blog of thoughs and archive of experience"
+description:        "Random Walks in the Physics Universe"
 # reading_time:       true
 # words_per_minute:   150
 logo:               'assets/img/logo.png'
@@ -30,7 +30,7 @@ sass:
 compress_html:
   blanklines:       true
 # Comments
-disqus_shortname:   refraction-ray-disqus-com
+disqus_shortname:   shch-disqus-com
 
 # Social
 # if you don't have any of social below, comment the line.
