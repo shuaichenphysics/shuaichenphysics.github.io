@@ -15,13 +15,13 @@ comments: true
 In practice, I come across a problem with taking a derivative of an eigenvector. Mathematically,  with  a matrix $$H(\alpha)$$ and its eigenvector $$\mathbf v(\alpha)$$, 
 
 $$
-H(\alpha )\mathbf v(\alpha )=E(\alpha)\mathbf v(\alpha)
+H(\alpha )\mathbf v(\alpha )=E(\alpha)\mathbf v(\alpha),
 \label{eigeneq} 
 $$
 
-a question comes how to calculate the derivative $$\partial_\alpha\mathbf v(\alpha )$$ efficiently. One naive method is to find $$v(\alpha+\delta \alpha )$$, such that $$\partial_\alpha \mathbf v(\alpha)=[\mathbf v(\alpha+\delta\alpha)-\mathbf v(\alpha)]/\delta\alpha$$ is obtained directly by the definition. Such a scheme generates errors and we have to determine which eigenvector is targeted for $$H(\alpha+\
-delta\alpha)$$. When the $$H(\alpha)$$ depends on plenty of parameters $$\alpha_1,\alpha_2,\cdots$$, much effort is needed. 
-As a matter of fact, we can reach our purpose by means of __generalized inverse__. We set out to take a derivative on both sides of  $$\eqref{eigeneq}$$
+a question comes how to calculate the derivative $$\partial_\alpha\mathbf v(\alpha )$$ efficiently. One naive method is to find $$v(\alpha+\delta \alpha )$$, such that $$\partial_\alpha \mathbf v(\alpha)=[\mathbf v(\alpha+\delta\alpha)-\mathbf v(\alpha)]/\delta\alpha$$ is obtained directly by the definition. Such a scheme generates errors and we have to determine which eigenvector is targeted for 
+$$H(\alpha+\delta\alpha)$$. When the $$H(\alpha)$$ depends on plenty of parameters $$\alpha_1,\alpha_2,\cdots$$, much effort is needed. 
+As a matter of fact, we can reach our purpose by means of __generalized inverse__. We set out to take a derivative on both sides of Eq.~$$(\ref{eigeneq})$$
 
 $$
 \partial_\alpha H(\alpha)\mathbf v(\alpha)+H(\alpha)\partial_\alpha\mathbf v(\alpha)=\partial_\alpha E(\alpha)\mathbf v(\alpha)+E(\alpha) \partial_\alpha\mathbf v(\alpha),
