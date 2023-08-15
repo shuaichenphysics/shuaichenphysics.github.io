@@ -187,7 +187,7 @@ The rigorous justification of the integration by parts, in general, follows from
 > I(k)=\int_a ^b f(t)e^{-kt}dt
 > $$
 > 
-> Where the interval $$[a,b]$$ is a finite segment of the real axis. Let $$f(m)(t)$$ Denote the $m$th derivative of $$f(t)$$. Suppose that $$f(t)$$ has $$N+1$$ Continuous derivatives while $$f^{(N+2)}(t)$$ is piecewise continuous on $$a\leq t\leq b$$. Then
+> Where the interval $$ [a,b] $$ is a finite segment of the real axis. Let $$f(m)(t)$$ Denote the $$m$$th derivative of $$f(t)$$. Suppose that $$f(t)$$ has $$N+1$$ Continuous derivatives while $$f^{(N+2)}(t)$$ is piecewise continuous on $$a\leq t\leq b$$. Then
 >  
 > $$
 > I(k)\sim \sum_{n=0}^N \frac{e^{-ka}}{k^{n+1}} f^{(n)},k\rightarrow +\infty
