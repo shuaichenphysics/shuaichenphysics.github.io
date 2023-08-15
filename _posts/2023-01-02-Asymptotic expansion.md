@@ -27,12 +27,15 @@ The first step is to make a definition of asymptotic expansion under the conditi
 
 > ==Def== 
 >
-> a) The notation 
+> a) The notation
+> 
 > $$
 > f(k)=O(g(k)),\quad k\rightarrow k_0
 > $$
-> Means that there is a finite constant $M$ and a neighborhood of $$k_0$$ where $$|f|\leq M|g|$$.
->        b) THe notation 
+> 
+> Means that there is a finite constant $$M$$ and a neighborhood of $$k_0$$ where $$|f|\leq M|g|$$.
+>        b) THe notation
+> 
 > $$
 > f(k)\leq g(k),\quad k\rightarrow k_0
 > $$
