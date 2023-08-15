@@ -225,7 +225,7 @@ If $$f(t)$$ is not sufficiently smooth at $$t=a$$, then the integration by parts
 > I_1(k) = \int_0^R f(t)e^{-kt }dt ,\quad I_2(k) = \int_R^b f(t)e^{-kt }dt
 > $$
 > 
-> and $$R<b$$ is a positive constant.  The integral is exponentially small as $$k\rightarrow \infty$$. For finite $$b$$, because $$f(t)$$ is bounded for $$t>0$$, there exists a positive constant $$A$$, such that $$|f|\leq A$$ for $$t\geq R$$. Thus
+> and $$ R<b $$ is a positive constant.  The integral is exponentially small as $$ k\rightarrow \infty $$. For finite $$ b $$, because $$f(t)$$ is bounded for $$t>0$$, there exists a positive constant $$A$$, such that $$|f|\leq A$$ for $$t\geq R$$. Thus
 > 
 > $$
 > |I_2(k)|\leq A\int_R^b e^{-kt}dt = \frac{A}{k}(e^{-kR}-e^{-kr})~.
