@@ -208,10 +208,10 @@ If $$f(t)$$ is not sufficiently smooth at $$t=a$$, then the integration by parts
 > I(k)=\int_0^b f(t)e^{-kt}dt, \quad b>0
 > $$
 > 
-> Suppose that $$f(t)$$ is integrable in $$(0,b)$$ and that it has the asymptotic series expansion
+> Suppose that $$f(t)$$ is integrable in $$ (0,b) $$ and that it has the asymptotic series expansion
 > 
 > $$
-> f(t)\sim t^\alpha \sum_{n=0}^\infty a_n t^{\beta n},\quad t\rightarrow 0^+,\alpha>-1,\beta>0
+> f(t)\sim t^\alpha \sum_{n=0}^\infty a_n t^{\beta n},\quad t\rightarrow 0^+,\alpha>-1,\beta>0.
 > $$
 > 
 > Then
@@ -220,19 +220,19 @@ If $$f(t)$$ is not sufficiently smooth at $$t=a$$, then the integration by parts
 > I(k)\sim \sum_{n=0}^\infty a_n\frac{\Gamma(\alpha+\beta n+1)}{k^{\alpha+\beta n+1}},\quad k\rightarrow \infty
 > $$
 > 
-> __Proof__ We break the integral in two parts, $$I_1(k)$$ and $$I_2(k)$$,
+> __Proof__ We break the integral in two parts, $$ I_1(k) $$ and $$ I_2(k) $$,
 > 
 > $$
 > I_1(k) = \int_0^R f(t)e^{-kt }dt ,\quad I_2(k) = \int_R^b f(t)e^{-kt }dt
 > $$
 > 
-> and $$ R<b $$ is a positive constant.  The integral is exponentially small as $$ k\rightarrow \infty $$. For finite $$ b $$, because $$f(t)$$ is bounded for $$t>0$$, there exists a positive constant $$A$$, such that $$|f|\leq A$$ for $$t\geq R$$. Thus
+> and $$ R<b $$ is a positive constant.  The integral is exponentially small as $$ k\rightarrow \infty $$. For finite $$ b $$, because $$ f(t) $$ is bounded for $$ t>0 $$, there exists a positive constant $$ A $$, such that $$ |f|\leq A $$ for $$ t\geq R $$. Thus
 > 
 > $$
 > |I_2(k)|\leq A\int_R^b e^{-kt}dt = \frac{A}{k}(e^{-kR}-e^{-kr})~.
 > $$
 > 
-> Thus $$I_2(k)=O(\frac{e^{-kR}}{k})$$. Due to the series, we have
+> Thus $$ I_2(k)=O(\frac{e^{-kR}}{k}) $$. Due to the series, we have
 > 
 > $$
 > I_1(k)=\int_0^R [\sum_{n=0}^R a_nt^{\alpha+\beta n}+ O(t^{\alpha +\beta (N+1)}) ]e^{-kt}dt,\quad k\rightarrow \infty~.
