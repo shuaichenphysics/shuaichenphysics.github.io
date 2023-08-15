@@ -187,7 +187,7 @@ The rigorous justification of the integration by parts, in general, follows from
 > I(k)=\int_a ^b f(t)e^{-kt}dt
 > $$
 > 
-> Where the interval $$ [a,b] $$ is a finite segment of the real axis. Let $$f(m)(t)$$ Denote the $$m$$th derivative of $$f(t)$$. Suppose that $$f(t)$$ has $$N+1$$ Continuous derivatives while $$f^{(N+2)}(t)$$ is piecewise continuous on $$a\leq t\leq b$$. Then
+> Where the interval $$ [a,b] $$ is a finite segment of the real axis. Let $$ f(m)(t) $$ Denote the $$m$$th derivative of $$f(t)$$. Suppose that $$f(t)$$ has $$N+1$$ Continuous derivatives while $$f^{(N+2)}(t)$$ is piecewise continuous on $$ a\leq t\leq b $$. Then
 >  
 > $$
 > I(k)\sim \sum_{n=0}^N \frac{e^{-ka}}{k^{n+1}} f^{(n)},k\rightarrow +\infty
@@ -226,13 +226,18 @@ If $$f(t)$$ is not sufficiently smooth at $$t=a$$, then the integration by parts
 > I_1(k) = \int_0^R f(t)e^{-kt }dt ,\quad I_2(k) = \int_R^b f(t)e^{-kt }dt
 > $$
 > 
-> and $$ R<b $$ is a positive constant.  The integral is exponentially small as $$ k\rightarrow \infty $$. For finite $$ b $$, because $$ f(t) $$ is bounded for $$ t>0 $$, there exists a positive constant $$ A $$, such that $$ |f|\leq A $$ for $$ t\geq R $$. Thus
+> and $$ R<b $$ is a positive constant.
+> The integral is exponentially small as $$ k\rightarrow \infty $$.
+> For finite $$ b$$, because $$ f(t) $$ is bounded for $$ t>0 $$,
+> there exists a positive constant $$ A $$, such that
+>  $$ |f|\leq A $$ for $$ t\geq R $$. Thus,
 > 
 > $$
 > |I_2(k)|\leq A\int_R^b e^{-kt}dt = \frac{A}{k}(e^{-kR}-e^{-kr})~.
 > $$
 > 
-> Thus $$ I_2(k)=O(\frac{e^{-kR}}{k}) $$. Due to the series, we have
+> Thus $$ I_2(k)=O(\frac{e^{-kR}}{k}) $$. Due to the series,
+> we have
 > 
 > $$
 > I_1(k)=\int_0^R [\sum_{n=0}^R a_nt^{\alpha+\beta n}+ O(t^{\alpha +\beta (N+1)}) ]e^{-kt}dt,\quad k\rightarrow \infty~.
