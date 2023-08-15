@@ -219,7 +219,7 @@ If $$f(t)$$ is not sufficiently smooth at $$t=a$$, then the integration by parts
 > I(k)\sim \sum_{n=0}^\infty a_n\frac{\Gamma(\alpha+\beta n+1)}{k^{\alpha+\beta n+1}},\quad k\rightarrow \infty
 > $$
 > 
-> __Proof__ We break the integral in two parts, $$I_1(k)$$ and $$I_2(k)$$
+> __Proof__ We break the integral in two parts, $$I_1(k)$$ and $$I_2(k)$$,
 > 
 > $$
 > I_1(k) = \int_0^R f(t)e^{-kt }dt ,\quad I_2(k) = \int_R^b f(t)e^{-kt }dt
@@ -234,7 +234,7 @@ If $$f(t)$$ is not sufficiently smooth at $$t=a$$, then the integration by parts
 > Thus $$I_2(k)=O(\frac{e^{-kR}}{k})$$. Due to the series, we have
 > 
 > $$
-> I_1(k)=\int_0^R [\sum_{n=0}^R a_nt^{\alpha+\beta n}+ O(t^{\alpha +\beta (N+1)})]e^{-kt}dt,\quad k\rightarrow \infty~.
+> I_1(k)=\int_0^R [\sum_{n=0}^R a_nt^{\alpha+\beta n}+ O(t^{\alpha +\beta (N+1)}) ]e^{-kt}dt,\quad k\rightarrow \infty~.
 > $$
 > 
 > However,
@@ -255,7 +255,7 @@ $$
 I(k) = \int_0^5 \frac{e^{-kt}}{\sqrt{t^2+2t}}dt,\quad k\rightarrow \infty
 $$
 
-A singularity exists at $$t=0$$, which forbids the partial integral method. Intuitively, the singularity at $t=0$ makes the dominant contribution. Thus it would be desirable to expand $$(t^2+2t)^{-1/2}$$ in the neighborhood of the origin. We separate the integral into two parts,
+A singularity exists at $$t=0$$, which forbids the partial integral method. Intuitively, the singularity at $$t=0$$ makes the dominant contribution. Thus it would be desirable to expand $$(t^2+2t)^{-1/2}$$ in the neighborhood of the origin. We separate the integral into two parts,
 
 $$
 I(k) =I_1(k) +I_2(k)= (\int_0^R  +\int_R^5 )\frac{e^{-kt}}{\sqrt{t^2+2t}}dt
