@@ -116,8 +116,8 @@ $$
 \int_k ^b f(t)dt ,\quad k\rightarrow \infty.
 $$
 
-To determine the leading behavior of integrals of the first class, we use the following fact. __Assume that $$ f(k,t) \sim f_0(t) $$ as $$ k\rightarrow k_0 $$ uniformly for $$t$$ in $$ [a,b] $$, 
-and that $$ \int_a^b f_0(t)dt $$ is finite and nonzero__. The limit as $$ k\rightarrow k_0$ $ and the integral can be  interchanged, hence 
+To determine the leading behavior of integrals of the first class, we use the following fact. __Assume that $$ f(k,t) \sim f_0(t) $$ as $$ k\rightarrow k_0 $$ uniformly for $$ t $$ in $$ [a,b] $$, 
+and that $$ \int_a^b f_0(t)dt $$ is finite and nonzero__. The limit as $$ k\rightarrow k_0$$ and the integral can be  interchanged, hence 
 
 $$
 \int_a^b f(k,t)dt\sim \int_a^b f_0(t)dt,\quad k\rightarrow k_0
