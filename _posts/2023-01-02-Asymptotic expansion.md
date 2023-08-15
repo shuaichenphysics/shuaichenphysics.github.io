@@ -11,7 +11,7 @@ comments: true
 {:toc}
 
 
-The solution of a large class of physically important problems can be represented in terms of definite integrals and further can be expressed in terms of special functions. However, exact solutions fail to tell the true content. In order to decipher the main mathematical and physical features of these solutions, it is useful to study their behavior for large $x$ and $t$. Frequently, one particular class of the integral has a form as 
+The solution of a large class of physically important problems can be represented in terms of definite integrals and further can be expressed in terms of special functions. However, exact solutions fail to tell the true content. In order to decipher the main mathematical and physical features of these solutions, it is useful to study their behavior for large $$x$$ and $$t$$. Frequently, one particular class of the integral has a form as 
 
 $$
 I(k)= \int_a^b f(t) \exp(t\phi(k)) dt \quad \mbox{with}\quad k \rightarrow \infty.
