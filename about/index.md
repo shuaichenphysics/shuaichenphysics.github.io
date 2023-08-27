@@ -8,11 +8,11 @@ comments: false
 
 
 ## Interests
-* Quantum many-body theory
-  * Strong correlated system and high temperature superconductors
-  * Unconventional superconductors
-  * Non-equilibrium physic
-  * Variational Monte Carlo and AI
+* Quantum Many-Body Theory
+  * Strong Correlated System and High-Temperature Superconductors
+  * Unconventional Superconductors
+  * Non-equilibrium Physic
+  * Variational Monte Carlo and Machine Learning
 
  
 
