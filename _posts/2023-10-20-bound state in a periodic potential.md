@@ -14,7 +14,7 @@ $$
 H(x) |\psi_\alpha(x)\rangle = \epsilon_\alpha(x)|\psi_\alpha(x)\rangle
 $$
 
-With eigenvalue $$\epsilon_\alpha(x)$$ that form a band structure in parameter space, and corresponding eigenstates $$|\psi_\alpha(x)\rangle $$. 
+With eigenvalue $$\epsilon_\alpha(x)$$ that forms a band structure in parameter space, and corresponding eigenstates $$ \vert\psi_\alpha(x)\rangle $$. 
 We remark that $$x$$ indeed represents a general parameter such as momentum, or interaction parameter. As the name geometry indicates, we will define so-called __quantum geometry__ that encodes structural information of the Hilbert spaces $$\{\mathcal H_x\}$$ when the parameter $$x$$ varies. 
 
 It is often the case that perturbation occurs (in reality or thinking experiments) $$x\rightarrow x+\Delta x $$. Then the system shows response to the external perturbation and for weak perturbation, the response can be expressed in the unperturbed Hamiltonian $$H(x)$$. There are two aspects of changes. First, the __shift of the energy__ and we may call it the **spectrum physics** (I cook the name, not serious). More precisely, the information shall be encoded by the velocity 
@@ -63,7 +63,7 @@ $$
 \langle \psi(x)|\psi(x+\Delta x)\rangle = \mathcal Fe^{-i\Delta \varphi}
 $$
 
-with $$\mathcal F=\vert\langle \psi(x)|\psi(x+\Delta x)\rangle\vert$$. Such an overlap is non-zero whenever the states do not form an orthonormal basis in $$x$$-space. Separating into real and imaginary parts, one will find the expression.
+with $$\mathcal F=\vert\langle \psi(x)\vert\psi(x+\Delta x)\rangle\vert$$. Such an overlap is non-zero whenever the states do not form an orthonormal basis in $$x$$-space. Separating into real and imaginary parts, one will find the expression.
 
 
 
