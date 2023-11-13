@@ -3,14 +3,14 @@ layout: post
 title: "Wanner waves, tight-binding model and quantum geometry"
 date: 2023-11-13
 excerpt: "Construct tight-binding model with a periodic potential"
-tags: [Quantum geoemtry, Bloch theorem]
+tags: [Quantum geometry, Bloch theorem]
 comments: true
 ---
 
 * toc
 {:toc}
 
-# Wanner waves, tight-binding model and quantum geometry
+# Wanner waves, tight-binding model, and quantum geometry
 
 ## Wannier waves
 We begin with the single-particle Schroedinger equation in $$d$$ spatial dimensions
@@ -46,7 +46,7 @@ $$
 $$
 
 Here, $$\mathcal{A}_\mathrm{uc}$$ is the volume of the unit cell, and $$\mathbf{r}_i$$ represents a lattice site spanned by the lattice vectors $$\mathbf{a}_i$$ $$(i=1,\cdots,d)$$. The integration over momentum is performed over the first Brillouin zone (BZ). The unitary matrix $$\mathcal{U}_\mathbf{k}$$ is chosen to optimize the localization of the Wannier functions.
-The Wannier function $$\langle\mathbf{r}\vert\mathbf{r}_i\alpha\rangle \equiv w_\alpha(\mathbf{r}-\mathbf{r}_i)$$ is localized around the lattice site $$\mathbf{r}_i$$. It turns out to be the Fourier transformation of the corresponding Bloch wave, and thus inherits the orthonormality properties of the Bloch functions.
+The Wannier function $$\langle\mathbf{r}\vert\mathbf{r}_i\alpha\rangle \equiv w_\alpha(\mathbf{r}-\mathbf{r}_i)$$ is localized around the lattice site $$\mathbf{r}_i$$. It turns out to be the Fourier transformation of the corresponding Bloch wave and thus inherits the orthonormality properties of the Bloch functions.
 
 ## Quantum metric: lower bound of quadratic spread
 
