@@ -167,4 +167,4 @@ $$
 where $$g_{\mathbf{k}}$$ represents an eigenvector of $$h_{\alpha\beta}(\mathbf{k})$$, and $$c_{\mathbf{k}}$$ annihilates an electron in the targeted band. It is important to note that the index $$\alpha$$ appearing in both $$a_{i\alpha}$$ and $$g_{\mathbf{k}}(\alpha)$$ arises from the realization of a multiband tight-binding model, which accounts for the nontrivial quantum metric or Wannier obstruction. This can be inferred from the quantum metric associated with $$g_{\mathbf{k}}$$.
 
 
-[^1] Nicola Marzari and David Vanderbilt, Maximally localized generalized Wannier functions for composite energy bands, (Phys. Rev. B 56, 12847)[https://journals.aps.org/prb/abstract/10.1103/PhysRevB.56.12847]
+[^1] Nicola Marzari and David Vanderbilt, Maximally localized generalized Wannier functions for composite energy bands, [Phys. Rev. B 56, 12847](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.56.12847)
