@@ -12,6 +12,7 @@ comments: true
 
 # Wanner waves, tight-binding model and quantum geometry
 
+## Wannier waves
 We begin with the single-particle Schroedinger equation in $$d$$ spatial dimensions
 
 $$
@@ -47,6 +48,7 @@ $$
 Here, $$\mathcal{A}_\mathrm{uc}$$ is the volume of the unit cell, and $$\mathbf{r}_i$$ represents a lattice site spanned by the lattice vectors $$\mathbf{a}_i$$ $$(i=1,\cdots,d)$$. The integration over momentum is performed over the first Brillouin zone (BZ). The unitary matrix $$\mathcal{U}_\mathbf{k}$$ is chosen to optimize the localization of the Wannier functions.
 The Wannier function $$\langle\mathbf{r}\vert\mathbf{r}_i\alpha\rangle \equiv w_\alpha(\mathbf{r}-\mathbf{r}_i)$$ is localized around the lattice site $$\mathbf{r}_i$$. It turns out to be the Fourier transformation of the corresponding Bloch wave, and thus inherits the orthonormality properties of the Bloch functions.
 
+## Quantum metric: lower bound of quadratic spread
 
 The unitary matrix $$\mathcal{U}_{\mathbf{k}}$$ is chosen to maximize the localization of Wannier functions by minimizing a localization functional, as introduced by _Marzari and Vanderbilt in their seminal work_ [^1]. The localization functional is given by
 
@@ -112,6 +114,7 @@ $$
 Hence, we can conclude that the quantum metric characterizes an obstruction to finding a complete set of exponentially localized Wannier functions. 
 When $$F_{I}$$ is finite, it indicates that more bands need to be included in the composite bands in order to construct a complete set of exponentially localized Wannier functions.
 
+## Second perspective: quantum metric from multi-band models
 
 Another perspective on the quantum metric arises from considering a multiband tight-binding model. Assuming we have already obtained a complete set of exponentially localized Wannier functions constructed from composite bands, 
 we can approximate the continuum Hamiltonian in Eq.$$~(\ref{eq:Hcont})$$ with a tight-binding model. In the language of second quantization, the continuum model in Eq.$$~(\ref{eq:Hcont})$$ can be expressed as
