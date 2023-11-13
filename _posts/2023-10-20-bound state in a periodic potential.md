@@ -142,7 +142,7 @@ H & =\sum_{\alpha\beta\in\mathcal{V}}\sum_{\mathbf{r}_{i},\mathbf{r}_{j}}\langle
 $$
 
 where no mixing term between indices from $$\mathcal{V}$$ and $$\mathcal{V}^{\perp}$$.
-Up to this point, all the derivations have been rigorous, and the expression in Eq.~$$(\ref{eq:tbhfull})$$$ includes all bands. However, since our interest lies solely in the bands belonging to $$\mathcal{V}$$, we can utilize a complete set of exponentially localized Wannier functions to approximate the Hamiltonian in Eq.$$~(\ref{eq:Hcont})$$ with a multi-band tight-binding model $$H_{\mathrm{tb}}$$ by disregarding the $$t^\perp$$ terms
+Up to this point, all the derivations have been rigorous, and the expression in Eq.~$$(\ref{eq:tbhfull})$$ includes all bands. However, since our interest lies solely in the bands belonging to $$\mathcal{V}$$, we can utilize a complete set of exponentially localized Wannier functions to approximate the Hamiltonian in Eq.$$~(\ref{eq:Hcont})$$ with a multi-band tight-binding model $$H_{\mathrm{tb}}$$ by disregarding the $$t^\perp$$ terms
 
 $$
 \begin{align}
