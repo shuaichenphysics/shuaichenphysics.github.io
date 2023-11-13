@@ -146,7 +146,7 @@ Up to this point, all the derivations have been rigorous, and the expression in 
 
 $$
 \begin{align}
-H_{\mathrm{tb}} & =\sum_{\alpha\beta\in\mathcal{V}}\sum_{\mathbf{r}_{i},\mathbf{r}_{j}}t_{ij,\alpha\beta}a_{i\alpha}^{\dagger}a_{j\beta}^{{}} =\sum_{\alpha\beta\in\mathcal{V}}\sum_{\mathbf{k}}h_{\alpha\beta}(\mathbf{k})a_{\mathbf{k}\alpha}^{\dagger}a_{\mathbf{k}\beta}^{{}},
+H_{\mathrm{tb}} & =\sum_{\alpha\beta\in\mathcal{V}}\sum_{\mathbf{r}_{i},\mathbf{r}_{j}}t_{ij,\alpha\beta}a_{i\alpha}^{\dagger}a_{j\beta} =\sum_{\alpha\beta\in\mathcal{V}}\sum_{\mathbf{k}}h_{\alpha\beta}(\mathbf{k})a_{\mathbf{k}\alpha}^{\dagger}a_{\mathbf{k}\beta}^{{}},
 \label{eq:tb}
 \end{align}
 $$
