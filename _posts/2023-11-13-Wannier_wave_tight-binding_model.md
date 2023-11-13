@@ -2,7 +2,7 @@
 layout: post
 title: "Wanner waves, tight-binding model and quantum geometry"
 date: 2023-11-13
-excerpt: "Construct tight-binding model with a periodic potential"
+excerpt: "How to construct a tight-binding model with a periodic potential"
 tags: [Quantum geometry, Bloch theorem]
 comments: true
 ---
