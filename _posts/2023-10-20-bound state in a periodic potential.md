@@ -10,16 +10,16 @@ comments: true
 * toc
 {:toc}
 
-# Wanner waves, tight-binding model, and quantum geometry
+# Wanner waves, tight-binding model and quantum geometry
 
 We begin with the single-particle Schroedinger equation in $$d$$ spatial dimensions
 
 $$
-H\vert\psi\rangle=\left[-\frac{(\hbar\nabla)^{2}}{2m}+V(\mathbf{r})\right]\vert\psi\rangle, \label{eq:Hcont}
+H\vert\psi\rangle=\left[-\frac{(\hbar\nabla)^{2}}{2m}+V(\mathbf{r})\right]\vert\psi\rangle, 
+\label{eq:Hcont}
 $$
 
-where $$V(\mathbf{r}+\mathbf{a}_{i})=V(\mathbf{r})$$ represents a periodic potential, and $$\mathbf{a}_{i}$$ ($$i=1,\cdots,d$$) defines a lattice system. 
-According to the Bloch theorem, the solutions, known as Bloch waves, for an energy band $$n$$ can be expressed as:
+where $$V(\mathbf{r}+\mathbf{a}_{i})=V(\mathbf{r})$$ represents a periodic potential, and $$\mathbf{a}_{i}$$ ($$i=1,\cdots,d$$) defines a lattice system. According to the Bloch theorem, the solutions, known as Bloch waves, for an energy band $$n$$ can be expressed as:
 
 $$
 \psi_{n\mathbf{k}}(\mathbf{r})=e^{i\mathbf{k}\cdot\mathbf{r}}u_{n\mathbf{k}}(\mathbf{r}),
@@ -45,10 +45,10 @@ $$
 $$
 
 Here, $$\mathcal{A}_\mathrm{uc}$$ is the volume of the unit cell, and $$\mathbf{r}_i$$ represents a lattice site spanned by the lattice vectors $$\mathbf{a}_i$$ $$(i=1,\cdots,d)$$. The integration over momentum is performed over the first Brillouin zone (BZ). The unitary matrix $$\mathcal{U}_\mathbf{k}$$ is chosen to optimize the localization of the Wannier functions.
-The Wannier function $$\langle\mathbf{r}\vert\mathbf{r}_i\alpha\rangle \equiv w_\alpha(\mathbf{r}-\mathbf{r}_i)$$ is localized around the lattice site $$\mathbf{r}_i$$. It turns out to be the Fourier transformation of the corresponding Bloch wave and thus inherits the orthonormality properties of the Bloch functions.
+The Wannier function $$\langle\mathbf{r}\vert\mathbf{r}_i\alpha\rangle \equiv w_\alpha(\mathbf{r}-\mathbf{r}_i)$$ is localized around the lattice site $$\mathbf{r}_i$$. It turns out to be the Fourier transformation of the corresponding Bloch wave, and thus inherits the orthonormality properties of the Bloch functions.
 
 
-The unitary matrix $$\mathcal{U}_{\mathbf{k}}$$ is chosen to maximize the localization of Wannier functions by minimizing a localization functional, as introduced by Marzari and Vanderbilt in their seminal work \cite{PhysRevB.56.12847}. The localization functional is given by
+The unitary matrix $$\mathcal{U}_{\mathbf{k}}$$ is chosen to maximize the localization of Wannier functions by minimizing a localization functional, as introduced by _Marzari and Vanderbilt in their seminal work_ [^1]. The localization functional is given by
 
 $$
 \begin{align}
@@ -65,9 +65,9 @@ F_{I} & =\sum_{\alpha\in\mathcal{V}}\left[\langle\mathbf{0}\alpha\vert r^{2}\ver
 \end{align}
 $$
 
-The optimization of the unitary matrix $$\mathcal{U}_{\mathbf{k}}$$ aims to minimize the localization functional $$ F $$, leading to the construction of maximally localized Wannier functions.
+The optimization of the unitary matrix $$\mathcal{U}_{\mathbf{k}}$$ aims to minimize the localization functional $$F$$, leading to the construction of maximally localized Wannier functions.
 The term $$F_I$$ is independent of the unitary transformation $$\mathcal{U}_{\mathbf{k}}$$ and therefore gauge invariant. This allows us to choose $$\mathcal{U}_{\mathbf{k}}$$ as an identity matrix with components $$(\mathcal{U}_{\mathbf{k}})_{\alpha,n}=\delta_{\alpha,n}$$ when calculating $$F_I$$.
-Then from the relation in Eqs.~$$(\ref{eq:wannier_Bloch1})$$ and $$(\ref{eq:wannier_Bloch2})$$, we have
+Then from the relation in Eqs.$$~(\ref{eq:wannier_Bloch1})$$ and $$(\ref{eq:wannier_Bloch2})$$, we have
 
 $$
 \begin{align}
@@ -75,7 +75,7 @@ $$
 \end{align}
 $$
 
-By taking the derivative with respect to $$\mathbf{q}$$ on both sides of Eq.~$$(\ref{eq:uuq})$$$, we obtain a series of relations in the limit $$q\rightarrow 0$$. For example, taking the first and second derivatives with respect to $$\mathbf{q}$$ gives
+By taking the derivative with respect to $$\mathbf{q}$$ on both sides of Eq.~$$(\ref{eq:uuq})$$, we obtain a series of relations in the limit $$q\rightarrow 0$$. For example, taking the first and second derivatives with respect to $$\mathbf{q}$$ gives
 
 $$
 \begin{align}
@@ -114,7 +114,7 @@ When $$F_{I}$$ is finite, it indicates that more bands need to be included in th
 
 
 Another perspective on the quantum metric arises from considering a multiband tight-binding model. Assuming we have already obtained a complete set of exponentially localized Wannier functions constructed from composite bands, 
-we can approximate the continuum Hamiltonian in Eq.~$$(\ref{eq:Hcont})$$ with a tight-binding model. In the language of second quantization, the continuum model in Eq.~$$(\ref{eq:Hcont})$$ can be expressed as
+we can approximate the continuum Hamiltonian in Eq.$$~(\ref{eq:Hcont})$$ with a tight-binding model. In the language of second quantization, the continuum model in Eq.$$~(\ref{eq:Hcont})$$ can be expressed as
 
 $$
 H=\int d^{d}\mathbf{r}\psi^{\dagger}(\mathbf{r})\left[-\frac{(\hbar\nabla)^{2}}{2m}+V(\mathbf{r})\right]\psi(\mathbf{r})~. \label{eq:2ndH}
@@ -129,7 +129,7 @@ $$
 
 where $$w_{\beta}^{\perp}(\mathbf{r}-\mathbf{r}_{i})$$ denotes Wannier
 functions associated with the complementary band set $$\mathcal{V}^{\perp}$$. 
-By substituting the expansion into the Hamiltonian in Eq.~$$(\ref{eq:2ndH})$$$, we can derive a tight-binding model defined on the lattice $$\{\mathbf{r}_{i}\}$$
+By substituting the expansion into the Hamiltonian in Eq.~$$(\ref{eq:2ndH})$$, we can derive a tight-binding model defined on the lattice $$\{\mathbf{r}_{i}\}$$
 
 $$
 \begin{align}
@@ -139,7 +139,7 @@ H & =\sum_{\alpha\beta\in\mathcal{V}}\sum_{\mathbf{r}_{i},\mathbf{r}_{j}}\langle
 $$
 
 where no mixing term between indices from $$\mathcal{V}$$ and $$\mathcal{V}^{\perp}$$.
-Up to this point, all the derivations have been rigorous, and the expression in Eq.~$$(\ref{eq:tbhfull})$$$ includes all bands. However, since our interest lies solely in the bands belonging to $$\mathcal{V}$$, we can utilize a complete set of exponentially localized Wannier functions to approximate the Hamiltonian in Eq.~$$(\ref{eq:Hcont})$$ with a multi-band tight-binding model $$H_{\mathrm{tb}}$$ by disregarding the $$t^\perp$$ terms
+Up to this point, all the derivations have been rigorous, and the expression in Eq.~$$(\ref{eq:tbhfull})$$$ includes all bands. However, since our interest lies solely in the bands belonging to $$\mathcal{V}$$, we can utilize a complete set of exponentially localized Wannier functions to approximate the Hamiltonian in Eq.$$~(\ref{eq:Hcont})$$ with a multi-band tight-binding model $$H_{\mathrm{tb}}$$ by disregarding the $$t^\perp$$ terms
 
 $$
 \begin{align}
@@ -163,3 +163,5 @@ $$
 
 where $$g_{\mathbf{k}}$$ represents an eigenvector of $$h_{\alpha\beta}(\mathbf{k})$$, and $$c_{\mathbf{k}}$$ annihilates an electron in the targeted band. It is important to note that the index $$\alpha$$ appearing in both $$a_{i\alpha}$$ and $$g_{\mathbf{k}}(\alpha)$$ arises from the realization of a multiband tight-binding model, which accounts for the nontrivial quantum metric or Wannier obstruction. This can be inferred from the quantum metric associated with $$g_{\mathbf{k}}$$.
 
+
+[^1] Nicola Marzari and David Vanderbilt, Maximally localized generalized Wannier functions for composite energy bands, (Phys. Rev. B 56, 12847)[https://journals.aps.org/prb/abstract/10.1103/PhysRevB.56.12847]
