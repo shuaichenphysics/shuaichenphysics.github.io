@@ -1,219 +1,165 @@
 ---
 layout: post
-title: "Bound state and Bloch wave, Wannier function"
-date: 2023-10-20
-excerpt: "How can the Wannier wave influence a bound state "
-tags: [Wannier function, Schroedinger equation]
+title: "Wanner waves, tight-binding model and quantum geometry"
+date: 2023-11-13
+excerpt: "Construct tight-binding model with a periodic potential"
+tags: [Quantum geoemtry, Bloch theorem]
 comments: true
 ---
 
-# Bound states under a periodic potential
+* toc
+{:toc}
 
-## Schroedinger equation and Bloch waves
+# Wanner waves, tight-binding model, and quantum geometry
 
-We first recall the Schroedinger equation with a periodic potential
-
-$$
-\left[-\frac{\nabla^{2}}{2m}+V(\mathbf{r})\right]\psi(\mathbf{r})=E\psi(\mathbf{r})\label{eq:bloch}
-$$
-
-Here $$V(\mathbf{r})$$ is a periodic potential $$V(\mathbf{r})=V(\mathbf{r}+\mathbf{a})$$.
-The system obeys the translation symmetry and the Bloch theorem
-tells that a general solution has the form as 
+We begin with the single-particle Schroedinger equation in $$d$$ spatial dimensions
 
 $$
-\psi_{n\mathbf{k}}(\mathbf{r})=e^{i\mathbf{k}\cdot\mathbf{r}}u_{n\mathbf{k}}(\mathbf{r})\label{eq:solution}
+H\vert\psi\rangle=\left[-\frac{(\hbar\nabla)^{2}}{2m}+V(\mathbf{r})\right]\vert\psi\rangle, \label{eq:Hcont}
 $$
 
-where $$u_{n\mathbf{k}}(\mathbf{r})$$ is also periodic with $$u_{n\mathbf{k}}(\mathbf{r})=u_{n\mathbf{k}}(\mathbf{r}+\mathbf{a})$$
-and $$n$$ is the band index. The wave function $$u_{n\mathbf{k}}(\mathbf{r})$$
-satisfies the equation 
+where $$V(\mathbf{r}+\mathbf{a}_{i})=V(\mathbf{r})$$ represents a periodic potential, and $$\mathbf{a}_{i}$$ ($$i=1,\cdots,d$$) defines a lattice system. 
+According to the Bloch theorem, the solutions, known as Bloch waves, for an energy band $$n$$ can be expressed as:
 
 $$
-\left[\frac{k^{2}}{2m}+V(\mathbf{r})\right]u_{n\mathbf{k}}(\mathbf{r})=Eu_{n\mathbf{k}}(\mathbf{r})\label{eq:uk}
+\psi_{n\mathbf{k}}(\mathbf{r})=e^{i\mathbf{k}\cdot\mathbf{r}}u_{n\mathbf{k}}(\mathbf{r}),
 $$
 
-Given a band $$n$$, we can define the Wannier functions
+where $$u_{n\mathbf{k}}(\mathbf{r})$$ is a periodic Bloch function satisfying $$u_{n\mathbf{k}}(\mathbf{r})=u_{n\mathbf{k}}(\mathbf{r}+\mathbf{a}_{i})$$, and $$\mathbf{k}$$ is the Bloch wavevector. The normalization condition for $$u_{n\mathbf{k}}(\mathbf{r})$$ is given by:
 
 $$
-W_{n\mathbf{R}}(\mathbf{r})=\frac{1}{\sqrt{N}}e^{i\mathbf{k}\cdot\mathbf{r}}\sum_{\mathbf{k}}e^{-i\mathbf{k}\cdot\mathbf{R}}u_{n\mathbf{k}}(\mathbf{r})\label{eq:Wannier}
+\int_{\text{u.c.}}d^{d}\mathbf{r} \vert u_{n\mathbf{k}}(\mathbf{r})\vert^{2}=1,
 $$
 
-Here $$\mathbf{R}$$ is lattice vector and $$N$$ is the number of primitive
-cells in the crystals. The Bloch functions can be written in terms
-of the Wannier functions as follows 
+where the integral is taken over one unit cell.
+Here, u.c. represents the unit cell with volume $$\mathcal{A}_\mathrm{uc}$$. The energy $$\epsilon_n(\mathbf{k})$$ satisfies periodicity with respect to the reciprocal lattice vectors $$\mathbf{G}_i$$, given by the condition $$\mathbf{a}_i \cdot \mathbf{G}_j = 2\pi \delta_{ij}$$. In other words, the energy is invariant under translations by the reciprocal lattice vectors.
 
-$$
-u_{n\mathbf{k}}(\mathbf{r})=\frac{1}{\sqrt{N}}\sum_{\mathbf{R}}e^{-i\mathbf{k}\cdot\mathbf{r}}e^{i\mathbf{k}\cdot\mathbf{R}}W_{n\mathbf{R}}(\mathbf{r})\label{eq:unk}
-$$
-
-The Wannier functions in Eq. (\ref{eq:Wannier}) constructed by the
-waves $$u_{n\mathbf{k}}(\mathbf{r})$$ is not unique due to a gauge
-degree of freedom in $$u_{n\mathbf{k}}(\mathbf{r})$$. Namely, when
-a phase change in $$u_{n\mathbf{k}}(\mathbf{r})\rightarrow u_{n\mathbf{k}}(\mathbf{r})e^{i\phi_{n\mathbf{k}}}$$
-in Eq.~(\ref{eq:solution}), $$\psi_{n\mathbf{k}}(\mathbf{r})$$ stays
-as an eigenstate to the Schroedinger equation in Eq.(\ref{eq:bloch}).We
-can find the optimally localized Wannier functions by minimizing the
-quadratic spread 
+We consider composite bands labeled by the band index $$n$$ in a specific subset $$\mathcal{V}$$, which is separated from other bands by sufficiently large band gaps. In this case, we can construct a set of Wannier basis states $$\{\vert\mathbf{r}_i\alpha\rangle\}$$ that span the same sub-Hilbert space as the Bloch waves corresponding to the bands with indices $$n\in\mathcal{V}$$.
+The Wannier basis states can be expressed as follows:
 
 $$
 \begin{align}
-\langle r^{2}\rangle-\langle r\rangle^{2} & \equiv\int_{\mathcal{A}_{uc}}d\mathbf{r}W_{\mathbf{0}}^{*}(\mathbf{r})r^{2}W_{\mathbf{0}}(\mathbf{r})-\left[\int_{\mathcal{A}}d\mathbf{r}W_{\mathbf{0}}^{*}(\mathbf{r})\mathbf{r}W_{\mathbf{0}}(\mathbf{r})\right]^{2}\\
- & \geq\frac{\mathcal{A}_{uc}}{(2\pi)^{d}}\int_{\mathrm{BZ}}d\mathbf{k}\mathrm{Tr}g(\mathbf{k})
+\vert\mathbf{r}_i\alpha\rangle &= \frac{\mathcal{A}_\mathrm{uc}}{(2\pi)^d}\int_\mathrm{BZ} d^d\mathbf{k}\, e^{i\mathbf{k}\cdot(\mathbf{r}-\mathbf{r}_i)} \sum_{n\in\mathcal{V}} (\mathcal{U}_\mathbf{k})_{n,\alpha} \vert u_{n\mathbf{k}}\rangle, \label{eq:wannier_Bloch1} \\
+\vert u_{n\mathbf{k}}\rangle &= \sum_{\mathbf{r}_i}\sum_\alpha e^{-i\mathbf{k}\cdot(\mathbf{r}-\mathbf{r}_i)} (\mathcal{U}_\mathbf{k}^\dagger)_{\alpha,n} \vert\mathbf{r}_i\alpha\rangle. \label{eq:wannier_Bloch2}
 \end{align}
 $$
 
-with $$\mathcal{A}_{uc}$$ denotes a unit cell. Here $$g(\mathbf{k})$$
-is the quantum metric with components
+Here, $$\mathcal{A}_\mathrm{uc}$$ is the volume of the unit cell, and $$\mathbf{r}_i$$ represents a lattice site spanned by the lattice vectors $$\mathbf{a}_i$$ $$(i=1,\cdots,d)$$. The integration over momentum is performed over the first Brillouin zone (BZ). The unitary matrix $$\mathcal{U}_\mathbf{k}$$ is chosen to optimize the localization of the Wannier functions.
+The Wannier function $$\langle\mathbf{r}\vert\mathbf{r}_i\alpha\rangle \equiv w_\alpha(\mathbf{r}-\mathbf{r}_i)$$ is localized around the lattice site $$\mathbf{r}_i$$. It turns out to be the Fourier transformation of the corresponding Bloch wave and thus inherits the orthonormality properties of the Bloch functions.
 
-$$
-g_{ab}(\mathbf{k})=\mathrm{Re}\langle\partial_{a}u_{n\mathbf{k}}\vert\left(1-\vert u_{n\mathbf{k}}\rangle\langle u_{n\mathbf{k}}\vert\right)\vert\partial_{b}u_{n\mathbf{k}}\rangle
-$$
 
-The average quantum metric appears as the lower bound of the quadratic
-spread which is gauge-independent. 
-
-## Bound state at impurity
-
-Here we consider an impurity along with the periodic potential. We
-focus on one spatial dimensional system The Schroedinger equation
-is
-
-$$
-\left[-\frac{\hbar}{2m}\frac{d^{2}}{dx^{2}}+V(x)-V_{0}\delta(x)\right]\psi(x)=E\psi(x)
-$$
-
-Here $$m_{0}$$ is the mass of the electron and one should not confuse it
-with an effective mass of an energy band. 
-
-We are interested in a bound state that is trapped by the impurity.
-To solve the bound state, we can consider the Schroedinger equation
-in Eq.~(\ref{eq:bloch}) with boundary condition 
-
-$$
-\psi(\infty)=0
-$$
-
-We assume a wave function ansatz
-
-$$
-\psi_{\lambda}(x)=e^{-\lambda x}u_{\lambda}(x)
-$$
-
-It is easy to find that $$u_{\lambda}(x)$$ satisfies the equation 
-
-$$
-\left[-\frac{\lambda^{2}}{2m}+V(x)\right]u_{\lambda}(x)=E_{n\lambda}u_{\lambda}(x)\label{eq:enl}
-$$
-
-which has the same form as in Eq. (\ref{eq:uk}). Therefore, we can
-apply the Bloch theorem 
-
-$$
-u_{n\lambda}(x)=\frac{1}{\sqrt{N}}\sum_{R}e^{-i\lambda x}e^{i\lambda R}W_{nR}(x)\label{eq:u_l}
-$$
-
-Here we also introduce the index $$n$$. We have the one-to-one
-correspondence between Eqs. (\ref{eq:u_l}) and (\ref{eq:unk}). The
-eigen energy in Eq. (\ref{eq:enl}) is 
+The unitary matrix $$\mathcal{U}_{\mathbf{k}}$$ is chosen to maximize the localization of Wannier functions by minimizing a localization functional, as introduced by Marzari and Vanderbilt in their seminal work \cite{PhysRevB.56.12847}. The localization functional is given by
 
 $$
 \begin{align}
-E_{n\lambda} & =-\frac{\lambda^{2}}{2m}+\sum_{\delta}e^{-i\lambda\delta}t(\delta)\nonumber \\
- & =-\frac{\lambda^{2}}{2m}+t(0)+2\mathrm{Re}\left[e^{-i\lambda a}t(a)\right]+2\mathrm{Re}\left[e^{-i2\lambda a}t(2a)\right]+\cdots
+F & =\sum_{\alpha\in\mathcal{V}}\left[\langle\mathbf{0}\alpha\vert r^{2}\vert\mathbf{0}\alpha\rangle-\vert\langle\mathbf{0}\alpha\vert\mathbf{r}\vert\mathbf{0}\alpha\rangle\vert^{2}\right]  =F_{I}+\delta F~. 
 \end{align}
 $$
 
-with $$\delta=0,\pm a,\pm2a,\cdots$$ and
-
-$$
-t(\delta)=\int_{0}^{a}dxW_{R}(x)V(x)W_{R+\delta}^{*}(x)
-$$
-
-If the profile of $$W_{R}(x)$$ exponentially decays, the hopping integral
-$$t(\delta)$$ decays exponentially as $$\delta$$ increases. Noting that
-$$E_{n\lambda=0}>E_{n\lambda>0}$$, we can conclude that the bound states
-have the energy lower than $$\sum_{\delta}e^{-i\lambda\delta}t(\delta)$$
-while a scattering scattering state is larger than $$\sum_{\delta}e^{-i\lambda\delta}t(\delta)$$
-given a band $$n$$.
-
-For the impurity problem, we can construct the wave function 
+Both parts, $$F_I$$ and $$\delta F$$, are non-negative, where
 
 $$
 \begin{align}
-\psi_{n\lambda}(x)= & \begin{cases}
-\frac{1}{\sqrt{N}}e^{-\lambda x}u_{n\lambda}(x) & x\geq0\\
-\frac{1}{\sqrt{N}}Ae^{-\lambda\vert x\vert}u_{n\lambda}(x) & x<0
-\end{cases}
+F_{I} & =\sum_{\alpha\in\mathcal{V}}\left[\langle\mathbf{0}\alpha\vert r^{2}\vert\mathbf{0}\alpha\rangle-\sum_{\mathbf{r}_{i}}\sum_{\beta}\vert\langle\mathbf{r}_{i}\beta\vert\mathbf{r}\vert\mathbf{0}\alpha\rangle\vert^{2}\right],\\
+\delta F & =\sum_{\mathbf{r}_{i}(\neq\mathbf{0})}\sum_{\beta(\neq\alpha)}\vert\langle\mathbf{r}_{i}\beta\vert\mathbf{r}\vert\mathbf{0}\alpha\rangle\vert^{2}.
 \end{align}
 $$
 
-At the $$x=0$$, we have the condition 
+The optimization of the unitary matrix $$\mathcal{U}_{\mathbf{k}}$$ aims to minimize the localization functional $$ F $$, leading to the construction of maximally localized Wannier functions.
+The term $$F_I$$ is independent of the unitary transformation $$\mathcal{U}_{\mathbf{k}}$$ and therefore gauge invariant. This allows us to choose $$\mathcal{U}_{\mathbf{k}}$$ as an identity matrix with components $$(\mathcal{U}_{\mathbf{k}})_{\alpha,n}=\delta_{\alpha,n}$$ when calculating $$F_I$$.
+Then from the relation in Eqs.~$$(\ref{eq:wannier_Bloch1})$$ and $$(\ref{eq:wannier_Bloch2})$$, we have
 
 $$
 \begin{align}
-\psi_{n}(0^{+}) & =\psi_{n}(0^{-})\\
--\frac{1}{2m}\left[\psi^{\prime}(0^{+})-\psi^{\prime}(0^{-})\right] & =V_{0}\psi(0)
+\langle u_{n\mathbf{k}}\vert u_{m\mathbf{k+q}}\rangle & =\sum_{\mathbf{r}_{i}}e^{-i\mathbf{k}\cdot\mathbf{r}_{i}}\langle\mathbf{r}_{i}n\vert e^{-i\mathbf{q}\cdot\mathbf{r}}\vert\mathbf{0}m\rangle ,\label{eq:uuq}
 \end{align}
 $$
 
-which gives rise to
+By taking the derivative with respect to $$\mathbf{q}$$ on both sides of Eq.~$$(\ref{eq:uuq})$$$, we obtain a series of relations in the limit $$q\rightarrow 0$$. For example, taking the first and second derivatives with respect to $$\mathbf{q}$$ gives
 
 $$
 \begin{align}
-\lambda & =mV_{0}\\
-A & =1
+\langle u_{n\mathbf{k}}\vert\nabla_{\mathbf{k}}u_{m\mathbf{k}}\rangle & =-i\sum_{\mathbf{r}_{i}}e^{-i\mathbf{k}\cdot\mathbf{r}_{i}}\langle\mathbf{r}_{i}n\vert\mathbf{r}\vert\mathbf{0}m\rangle ,\\
+\langle u_{n\mathbf{k}}\vert\nabla_{\mathbf{k}}^{2}u_{m\mathbf{k}}\rangle & =-\sum_{\mathbf{r}_{i}}e^{-i\mathbf{k}\cdot\mathbf{r}_{i}}\langle\mathbf{r}_{i}n\vert\mathbf{r}^{2}\vert\mathbf{0}m\rangle,
 \end{align}
 $$
 
-Therefore we have solution 
+Similarly, we can establish the converse relations
 
 $$
 \begin{align}
-\psi_{n\lambda}(x) & =\frac{1}{\sqrt{N}}e^{-\lambda\vert x\vert}u_{n\lambda}(x)\\
- & =\frac{1}{\sqrt{N}}e^{-\lambda\vert x\vert}e^{-i\lambda\cdot x}\sum_{R}e^{i\lambda R}W_{R}(x)\label{eq:psi_n}
+\langle\mathbf{r}_{i}n\vert\mathbf{r}\vert\mathbf{0}m\rangle & =i\frac{\mathcal{A}_{\mathrm{uc}}}{(2\pi)^{d}}\int_\mathrm{BZ} d^{d}\mathbf{k}e^{i\mathbf{k}\cdot\mathbf{r}_{i}}\langle u_{n\mathbf{k}}\vert\nabla_{\mathbf{k}}u_{m\mathbf{k}}\rangle ,\\
+\langle\mathbf{r}_{i}n\vert\mathbf{r}^{2}\vert\mathbf{0}m\rangle & =\frac{\mathcal{A}_{\mathrm{uc}}}{(2\pi)^{d}}\int_\mathrm{BZ} d^{d}\mathbf{k}e^{i\mathbf{k}\cdot\mathbf{r}_{i}}\langle\nabla_{\mathbf{k}}u_{n\mathbf{k}}\vert\nabla_{\mathbf{k}}u_{m\mathbf{k}}\rangle.
 \end{align}
 $$
 
-where $$N$$ is the normalization factor and the factor $$e^{-i\lambda\cdot x}$$
-is to ensure the orthogonality of the wave functions $$\psi_{n\lambda}(x)$$
-of bound states.
-
-The question arises: what Wannier basis should we choose? In fact,
-we can take the form in Eq. (\ref{eq:psi_n}) as a wave function ansatz
-given a parameter $$\lambda$$. The choice on the Wannier functions
-should minimize the energy of the bound state, or the energy $$E_{n0}=\sum_{\delta}e^{-i\lambda\delta}t(\delta)=\sum_{\delta}e^{-i\lambda\delta}\int_{0}^{a}dxW_{R}(x)V(x)W_{R+\delta}^{*}(x)$$.
-We can expect that the more localized the Wanner functions are, the
-lower energy the ansatz state possesses. As we mention above, the optimal localized
-Wannier function is related to the quantum metric which is gauge independent. 
-
-Furthermore, due the to localized property of Wannier function, the
-leading contribution to the $$\psi_{n\lambda}(x)$$ in Eq. (\ref{eq:psi_n})
-is 
-
-$$
-\psi_{n\lambda}(x)=\frac{1}{\sqrt{N}}e^{-\lambda\vert x\vert}e^{-i\lambda\cdot x}W_{0}(x)
-$$
-
-with $$\lambda=mV_{0}$$.We can consider a process in which we can adiabatically
-weaken the impurity strength $$V_{0}=0$$, the bound state will exclusively
-be controlled by the Wannier function. It is consistent with the property
-of Wannier functions which can be taken as the bound states that depends
-on the local profile of the periodic potential. 
-
-We emphasize that $$m$$ here is the bare mass of the electron. An effective
-mass of the band $$n$$ can be extracted as 
+Therefore, we can simplify $$ F_{I} $$ as 
 
 $$
 \begin{align}
-\frac{1}{m_{eff}} & =\frac{d^{2}}{dk^{2}}E_{nk}\vert_{k\rightarrow0}=\frac{1}{m}-\delta^{2}\sum_{\delta}t(\delta)
+F_{I} & =\sum_{\alpha\in\mathcal{V}}\left[\langle\mathbf{0}\alpha\vert r^{2}\vert\mathbf{0}\alpha\rangle-\sum_{\mathbf{r}_{i}}\sum_{\beta}\vert\langle\mathbf{r}_{i}\beta\vert\mathbf{r}\vert\mathbf{0}\alpha\rangle\vert^{2}\right]\\
+ & =\frac{\mathcal{A}_{\mathrm{uc}}}{(2\pi)^{d}}\int_\mathrm{BZ}d^{d}\mathbf{k}\sum_{n\in\mathcal{V}}\mathrm{Re}\langle\nabla_{\mathbf{k}}u_{n\mathbf{k}}\vert(\mathbb{I}_{\mathcal{V}}-\vert u_{n\mathbf{k}}\rangle\langle u_{n\mathbf{k}}\vert)\vert\nabla_{\mathbf{k}}u_{n\mathbf{k}}\rangle~,
 \end{align}
 $$
 
-We can consider the leading orders and for a flat band, we have the
-constraint 
+where $$\mathbb{I}_{\mathcal{V}}$$ is the identity operator in the sub-Hilbert space spanned by bands carrying indices in $$\mathcal{V}$$. This expression clearly shows that $$F_{I}$$ is expressed in terms of the quantum metric.
+Since $$\delta F\geq 0$$, we have the inequality relation,
 
 $$
-\frac{1}{m_{eff}}=\frac{1}{m}-a^{2}\left[t(a)+t(-a)\right]=0
+F\geq F_{I}~.
 $$
-which can be met by tuning the hopping integral $$t(\delta)$$. 
+
+Hence, we can conclude that the quantum metric characterizes an obstruction to finding a complete set of exponentially localized Wannier functions. 
+When $$F_{I}$$ is finite, it indicates that more bands need to be included in the composite bands in order to construct a complete set of exponentially localized Wannier functions.
+
+
+Another perspective on the quantum metric arises from considering a multiband tight-binding model. Assuming we have already obtained a complete set of exponentially localized Wannier functions constructed from composite bands, 
+we can approximate the continuum Hamiltonian in Eq.~$$(\ref{eq:Hcont})$$ with a tight-binding model. In the language of second quantization, the continuum model in Eq.~$$(\ref{eq:Hcont})$$ can be expressed as
+
+$$
+H=\int d^{d}\mathbf{r}\psi^{\dagger}(\mathbf{r})\left[-\frac{(\hbar\nabla)^{2}}{2m}+V(\mathbf{r})\right]\psi(\mathbf{r})~. \label{eq:2ndH}
+$$
+
+We then expand the field operator $$\psi(\mathbf{r})$$ in the basis
+of Wannier functions 
+
+$$
+\psi(\mathbf{r})=\sum_{\mathbf{r}_{i}}\sum_{\alpha\in\mathcal{V}}w_{\alpha}(\mathbf{r}-\mathbf{r}_{i})a_{i\alpha}+\sum_{\mathbf{r}_{i}}\sum_{\beta\in\mathcal{V}^{\perp}}w_{\beta}^{\perp}(\mathbf{r}-\mathbf{r}_{i})b_{i\beta}~,
+$$
+
+where $$w_{\beta}^{\perp}(\mathbf{r}-\mathbf{r}_{i})$$ denotes Wannier
+functions associated with the complementary band set $$\mathcal{V}^{\perp}$$. 
+By substituting the expansion into the Hamiltonian in Eq.~$$(\ref{eq:2ndH})$$$, we can derive a tight-binding model defined on the lattice $$\{\mathbf{r}_{i}\}$$
+
+$$
+\begin{align}
+H & =\sum_{\alpha\beta\in\mathcal{V}}\sum_{\mathbf{r}_{i},\mathbf{r}_{j}}\langle\mathbf{r}_{i}\alpha\vert H\vert\mathbf{r}_{j}\beta\rangle a_{i\alpha}^{\dagger}a_{j\beta}^{}+\sum_{\alpha^{\prime},\beta^{\prime}\in\mathcal{V}^{\perp}}\sum_{\mathbf{r}_{i},\mathbf{r}_{j}}\langle\mathbf{r}_{i}\alpha^{\prime}\vert H\vert\mathbf{r}_{j}\beta^{\prime}\rangle b_{i\alpha^{\prime}}^{\dagger}b_{j\beta^{\prime}}^{}\nonumber \\
+ & =\sum_{\alpha\beta\in\mathcal{V}}\sum_{\mathbf{r}_{i},\mathbf{r}_{j}}t_{ij,\alpha\beta}a_{i\alpha}^{\dagger}a_{j\beta}^{}+\sum_{\alpha^{\prime},\beta^{\prime}\in\mathcal{V}^{\perp}}\sum_{\mathbf{r}_{i},\mathbf{r}_{j}}t_{ij\alpha^{\prime}\beta^{\prime}}^{\perp}b_{i\alpha^{\prime}}^{\dagger}b_{j\beta^{\prime}}^{}~, \label{eq:tbhfull}
+\end{align}
+$$
+
+where no mixing term between indices from $$\mathcal{V}$$ and $$\mathcal{V}^{\perp}$$.
+Up to this point, all the derivations have been rigorous, and the expression in Eq.~$$(\ref{eq:tbhfull})$$$ includes all bands. However, since our interest lies solely in the bands belonging to $$\mathcal{V}$$, we can utilize a complete set of exponentially localized Wannier functions to approximate the Hamiltonian in Eq.~$$(\ref{eq:Hcont})$$ with a multi-band tight-binding model $$H_{\mathrm{tb}}$$ by disregarding the $$t^\perp$$ terms
+
+$$
+\begin{align}
+H_{\mathrm{tb}} & =\sum_{\alpha\beta\in\mathcal{V}}\sum_{\mathbf{r}_{i},\mathbf{r}_{j}}t_{ij,\alpha\beta}a_{i\alpha}^{\dagger}a_{j\beta}^{{}} =\sum_{\alpha\beta\in\mathcal{V}}\sum_{\mathbf{k}}h_{\alpha\beta}(\mathbf{k})a_{\mathbf{k}\alpha}^{\dagger}a_{\mathbf{k}\beta}^{{}},
+\label{eq:tb}
+\end{align}
+$$
+
+where $$t_{ij,\alpha\beta}$$ exponentially decays with the distance $$\vert\mathbf{r}_{i}-\mathbf{r}_{j}\vert$$. In Eq.~$$(\ref{eq:tb})$$, we have further introduced the Fourier transformation $$a_{\mathbf{k}\alpha}^{\dagger}=\frac{1}{\sqrt{N}}\sum_{\mathbf{r}_{i}}a_{i\alpha}^{\dagger}e^{i\mathbf{k}\cdot\mathbf{r}_{i}}$$, where $$N$$ represents the total number of lattice sites.
+In our specific setup, where there is a significant gap between the targeted band and the others, we can project onto the targeted band using the following expressions
+
+$$
+a_{i\alpha}\rightarrow\frac{1}{\sqrt{N}}\sum_{\mathbf{k}}e^{i\mathbf{k}\cdot\mathbf{r}_{i}}g_{\mathbf{k}}^{*}(\alpha)c_{\mathbf{k}}~,
+$$
+
+or 
+
+$$
+\psi({\mathbf r})\rightarrow\frac{1}{\sqrt{N}}\sum_{\mathbf{k}}e^{i\mathbf{k}\cdot\mathbf{r}_{i}}g_{\mathbf{k}}^{*}(\alpha)c_{\mathbf{k}}~,
+$$
+
+where $$g_{\mathbf{k}}$$ represents an eigenvector of $$h_{\alpha\beta}(\mathbf{k})$$, and $$c_{\mathbf{k}}$$ annihilates an electron in the targeted band. It is important to note that the index $$\alpha$$ appearing in both $$a_{i\alpha}$$ and $$g_{\mathbf{k}}(\alpha)$$ arises from the realization of a multiband tight-binding model, which accounts for the nontrivial quantum metric or Wannier obstruction. This can be inferred from the quantum metric associated with $$g_{\mathbf{k}}$$.
+
