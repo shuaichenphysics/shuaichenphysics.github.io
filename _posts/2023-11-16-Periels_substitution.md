@@ -2,7 +2,7 @@
 layout: post
 title: "Peierls Substitution"
 date: 2023-11-16
-excerpt: "Condensed matter"
+excerpt: "How does gauge field play in a lattice model? Peierls Substitution!"
 tags: [Condensed matter, Bloch Theorem, Lattice Gauge Field]
 comments: true
 ---
