@@ -106,10 +106,11 @@ We can check this by
 
 $$
 \begin{align}
-H(\mathbf{A})\psi_{\mathbf{k}}(\mathbf{r},\mathbf{A}) & =\left[\frac{(-i\mathbf{\nabla-\mathbf{A}}(\mathbf{r},t))^{2}}{2m}+V(\mathbf{r})\right]\frac{1}{\sqrt{N}}\sum_{\mathbf{R}}e^{i\mathbf{k}\cdot\mathbf{R}}W_{\mathbf{R}}(\mathbf{r},\mathbf{A})\\
- & =\frac{1}{\sqrt{N}}\sum_{\mathbf{R}}e^{i\mathbf{k}\cdot\mathbf{R}}\left[\frac{(-i\mathbf{\nabla-\mathbf{A}}(\mathbf{r},t))^{2}}{2m}+V(\mathbf{r})\right]\left[\exp\left(i\int_{\mathbf{R}}^{\mathbf{r}}\mathbf{A}(\mathbf{r}^{\prime},t)\right)W_{\mathbf{R}}(\mathbf{r})\right]\\
- & =\frac{1}{\sqrt{N}}\sum_{\mathbf{R}}\exp\left(i\int_{\mathbf{R}}^{\mathbf{r}}\mathbf{A}(\mathbf{r}^{\prime},t)\right)e^{i\mathbf{k}\cdot\mathbf{R}}\left[\frac{(-i\mathbf{\nabla-\mathbf{A}}(\mathbf{r},t)+\mathbf{A}(\mathbf{r},t))^{2}}{2m}+V(\mathbf{r})\right]W_{\mathbf{R}}(\mathbf{r})\\
- & =\frac{1}{\sqrt{N}}\sum_{\mathbf{R}}\exp\left(i\int_{\mathbf{R}}^{\mathbf{r}}\mathbf{A}(\mathbf{r}^{\prime},t)\right)e^{i\mathbf{k}\cdot\mathbf{R}}\left[\frac{(-i\nabla)^{2}}{2m}+V(\mathbf{r})\right]W_{\mathbf{R}}(\mathbf{r})
+& H(\mathbf{A})\psi_{\mathbf{k}}(\mathbf{r},\mathbf{A})  \\
+=& \left[\frac{(-i\mathbf{\nabla-\mathbf{A}}(\mathbf{r},t))^{2}}{2m}+V(\mathbf{r})\right]\frac{1}{\sqrt{N}}\sum_{\mathbf{R}}e^{i\mathbf{k}\cdot\mathbf{R}}W_{\mathbf{R}}(\mathbf{r},\mathbf{A})\\
+ =& \frac{1}{\sqrt{N}}\sum_{\mathbf{R}}e^{i\mathbf{k}\cdot\mathbf{R}}\left[\frac{(-i\mathbf{\nabla-\mathbf{A}}(\mathbf{r},t))^{2}}{2m}+V(\mathbf{r})\right]\left[\exp\left(i\int_{\mathbf{R}}^{\mathbf{r}}\mathbf{A}(\mathbf{r}^{\prime},t)\right)W_{\mathbf{R}}(\mathbf{r})\right]\\
+ =& \frac{1}{\sqrt{N}}\sum_{\mathbf{R}}\exp\left(i\int_{\mathbf{R}}^{\mathbf{r}}\mathbf{A}(\mathbf{r}^{\prime},t)\right)e^{i\mathbf{k}\cdot\mathbf{R}}\left[\frac{(-i\mathbf{\nabla-\mathbf{A}}(\mathbf{r},t)+\mathbf{A}(\mathbf{r},t))^{2}}{2m}+V(\mathbf{r})\right]W_{\mathbf{R}}(\mathbf{r})\\
+ =& \frac{1}{\sqrt{N}}\sum_{\mathbf{R}}\exp\left(i\int_{\mathbf{R}}^{\mathbf{r}}\mathbf{A}(\mathbf{r}^{\prime},t)\right)e^{i\mathbf{k}\cdot\mathbf{R}}\left[\frac{(-i\nabla)^{2}}{2m}+V(\mathbf{r})\right]W_{\mathbf{R}}(\mathbf{r})
 \end{align}
 $$
 
@@ -122,7 +123,7 @@ t_{\mathbf R\mathbf R^{\prime}}(\mathbf{A}) & =\int d\mathbf{r}W_{\mathbf{R}}^{*
 \end{align}
 $$
 
-where $$\Phi_{R^{\prime}rR}=\oint_{R^{\prime}\rightarrow r\rightarrow R\rightarrow R^{\prime}}\mathbf{A}(\mathbf{r}^{\prime})\cdot d\mathbf{r}^{\prime}$$,is
+where $$\Phi_{R^{\prime}rR}=\oint_{R^{\prime}\rightarrow r\rightarrow R\rightarrow R^{\prime}}\mathbf{A}(\mathbf{r}^{\prime})\cdot d\mathbf{r}^{\prime}$$, is
 the flux through the triangular made by three position arguments.Since
 the $$\mathbf{A}$$ is approximately uniform at the lattice scale,---
 the scale at which the Wannier states are localized to the positions
