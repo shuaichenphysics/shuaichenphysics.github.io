@@ -131,7 +131,7 @@ $$\mathbf{R}$$, we can than approximate $$\Phi_{R^{\prime}rR}=0$$, yielding
 the desired result.
 
 $$
-t_{RR^{\prime}}(\mathbf{A})=\exp\left[i\int_{\mathbf{R}^{\prime}}^{\mathbf{R}}\mathbf{A}\cdot d\mathbf{r}^{\prime}\right]t(\mathbf{R}^{\prime}-\mathbf{R})
+t_{\mathbf R\mathbf R^{\prime}}(\mathbf{A})=\exp\left[i\int_{\mathbf{R}^{\prime}}^{\mathbf{R}}\mathbf{A}\cdot d\mathbf{r}^{\prime}\right]t(\mathbf{R}^{\prime}-\mathbf{R})
 $$
 
 Therefore, the matrix elements are the same as in the case without
