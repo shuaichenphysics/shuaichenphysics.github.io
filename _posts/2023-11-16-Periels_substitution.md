@@ -28,13 +28,14 @@ $$
 H\psi_{\mathbf{k}}(\mathbf{r})=E(\mathbf{k})\psi_{\mathbf{k}}(\mathbf{r})
 $$
 
- to the Schroedinger equation in Eq. $$(\ref{eq:Seq})$$ can be written
+to the Schroedinger equation in Eq. $$(\ref{eq:Seq})$$ can be written
 in the form as 
 
-
+$$
 \begin{align}
 \psi_{\mathbf{k}}(\mathbf{r}) & =e^{i\mathbf{k}\cdot\mathbf{r}}u_{\mathbf{k}}(\mathbf{r}),
 \end{align}
+$$
 
 where $$N$$ is the number of unit cells and $$\mathbf{k}$$ is the crystal
 momentum related to the lattice. To consider the minimal coupling
@@ -50,10 +51,12 @@ $$
 Then we can calculate the eigenvalue $$E(\mathbf{k})$$ , by calculating
 the matrix element
 
+$$
 \begin{align}
 E(\mathbf{k}) & =\int d\mathbf{r}\psi_{\mathbf{k}}^{*}(\mathbf{r})H\psi_{\mathbf{k}}(\mathbf{r})=\int d\mathbf{r}\frac{1}{N}\sum_{\mathbf{R}^{\prime}\mathbf{R}}e^{i\mathbf{k}\cdot(\mathbf{R}^{\prime}-\mathbf{R})}W_{\mathbf{R}}^{*}(\mathbf{r})HW_{\mathbf{R}^{\prime}}(\mathbf{r})\\
  & =\frac{1}{N}\sum_{\mathbf{R}^{\prime}\mathbf{R}}e^{i\mathbf{k}\cdot(\mathbf{R}^{\prime}-\mathbf{R})}t(\mathbf{R}^{\prime}-\mathbf{R})
 \end{align}
+$$
 
 with $$t(\mathbf{R}^{\prime}-\mathbf{R})$$ is the hopping integral
 
@@ -67,12 +70,10 @@ Therefore, we can have a tight-binding model corresponding to the
 continuous model in Eq.~$$(\ref{eq:Seq})$$
 
 $$
-
 \begin{align}
 H_{\mathrm{tb}} & =\frac{1}{N}\sum_{\mathbf{R}^{\prime}\mathbf{R}}e^{i\mathbf{k}\cdot(\mathbf{R}^{\prime}-\mathbf{R})}t(\mathbf{R}^{\prime}-\mathbf{R})c_{\mathbf{R}}^{\dagger}c_{\mathbf{R}^{\prime}}\\
  & =\sum_{\mathbf{k}}E(\mathbf{k})c_{\mathbf{k}}^{\dagger}c_{\mathbf{k}}.
 \end{align}
-
 $$
 
 One of the most striking features of Eq.$$~(\ref{eq:Wann})$$ is the independence
@@ -112,11 +113,11 @@ H(\mathbf{A})\psi_{\mathbf{k}}(\mathbf{r},\mathbf{A}) & =\left[\frac{(-i\mathbf{
 \end{align}
 $$
 
-When calculating the hopping integral, we have =
+When calculating the hopping integral, we have 
 
 $$
 \begin{align}
-t_{RR^{\prime}}(\mathbf{A}) & =\int d\mathbf{r}W_{\mathbf{R}}^{*}(\mathbf{r},\mathbf{A})HW_{\mathbf{R}^{\prime}}(\mathbf{r},\mathbf{A})\\
+t_{\mathbf R\mathbf R^{\prime}}(\mathbf{A}) & =\int d\mathbf{r}W_{\mathbf{R}}^{*}(\mathbf{r},\mathbf{A})HW_{\mathbf{R}^{\prime}}(\mathbf{r},\mathbf{A})\\
  & =\exp\left[i\int_{\mathbf{R}^{\prime}}^{\mathbf{R}}\mathbf{A}\cdot d\mathbf{r}^{\prime}\right]\int d\mathbf{r}e^{i\Phi_{R^{\prime}rR}}HW_{\mathbf{R}^{\prime}}(\mathbf{r})
 \end{align}
 $$
