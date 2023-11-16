@@ -30,7 +30,7 @@ and $$n$$ is the band index. The wave function $$u_{n\mathbf{k}}(\mathbf{r})$$
 satisfies the equation 
 
 $$
-\left[\frac{k^{2}}{2m}+V(\mathbf{r})\right]u_{n\mathbf{k}}(\mathbf{r})=Eu_{n\mathbf{k}}(\mathbf{r})\label{eq:uk}
+\left[-\frac{1}{2m}\frac{d^2}{dx^2}+ \frac{k^{2}}{2m}+V(\mathbf{r})\right]u_{n\mathbf{k}}(\mathbf{r})=Eu_{n\mathbf{k}}(\mathbf{r})\label{eq:uk}
 $$
 
 Given a band $$n$$, we can define the Wannier functions
@@ -80,7 +80,7 @@ focus on one spatial dimensional system The Schroedinger equation
 is
 
 $$
-\left[-\frac{\hbar}{2m}\frac{d^{2}}{dx^{2}}+V(x)-V_{0}\delta(x)\right]\psi(x)=E\psi(x)
+\left[-\frac{1}{2m}\frac{d^{2}}{dx^{2}}+V(x)-V_{0}\delta(x)\right]\psi(x)=E\psi(x)
 $$
 
 Here $$m_{0}$$ is the mass of the electron and one should not confuse it
