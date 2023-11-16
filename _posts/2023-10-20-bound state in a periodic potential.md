@@ -103,7 +103,7 @@ $$
 It is easy to find that $$u_{\lambda}(x)$$ satisfies the equation 
 
 $$
-\left[-\frac{\lambda^{2}}{2m}+V(x)\right]u_{\lambda}(x)=E_{n\lambda}u_{\lambda}(x)\label{eq:enl}
+\left[-\frac{\hbar}{2m}\frac{d^2}{dx^2}-\frac{\lambda^{2}}{2m}+V(x)\right]u_{\lambda}(x)=E_{n\lambda}u_{\lambda}(x)\label{eq:enl}
 $$
 
 which has the same form as in Eq. (\ref{eq:uk}). Therefore, we can
