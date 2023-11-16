@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to quantum geometry"
 date: 2023-08-28
 excerpt: "ABC about Quantum geometry"
-tags: [Quantum Qeometry, math]
+tags: [Quantum Qeometry, Math]
 comments: true
 ---
 
