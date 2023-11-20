@@ -64,9 +64,10 @@ The first phase factor, $$e^{-i\gamma(t)}$$, corresponds to the well-known Berry
 
 $$
 e^{-i\gamma_{\Omega}(t)}e^{-i\int_{\Omega}A\cdot d\lambda} = \prod_{\lambda_{i}}\frac{\langle\psi(\lambda(t_{i}))\vert\psi(\lambda(t_{i+1})\rangle}{\vert\langle\psi(\lambda(t_{i}))\vert\psi(\lambda(t_{i+1})\rangle\vert},
+\label{eq:Berry}
 $$
 
-where $$\lambda_{i}$$ represents the discrete points along the closed path. When no phase is accumulated along a path, it appears featureless. In the definition of the Berry phase, we introduce a normalization factor, specifically the absolute value of the inner product between the states $$\langle\psi(\lambda(t_{i}))\vert\psi(\lambda(t_{i+1})\rangle$$, as shown in Equation $$(\ref{eq:Berry})$$. Consequently, the adiabatic theorem captures only the curvature structure. To obtain the complete Riemannian structure, we need to go beyond the adiabatic approximation.
+where $$\lambda_{i}$$ represents the discrete points along the closed path. When no phase is accumulated along a path, it appears featureless. In the definition of the Berry phase, we introduce a normalization factor, specifically the absolute value of the inner product between the states $$\langle\psi(\lambda(t_{i}))\vert\psi(\lambda(t_{i+1})\rangle$$, as shown in Eq.$$~(\ref{eq:Berry})$$. Consequently, the adiabatic theorem captures only the curvature structure. To obtain the complete Riemannian structure, we need to go beyond the adiabatic approximation.
 
 
 The leading correction to the adiabatic approximation takes into account the rate at which the particle transitions to excited states with a certain probability.
@@ -96,7 +97,7 @@ e^{-\mathbb{g}_{\Omega}-i\gamma_{\Omega}} & =e^{-\int\vert\langle\lambda(t_{i})\
 \end{align}
 $$
 
-Currently, it is evident that the amplitude of the term $$e^{-\mathbb{g}{\Omega}-i\gamma{\Omega}}$$ can decay over time or along a given path. The Berry phase, denoted as $$e^{-i\gamma_{\Omega}(t)}$$, relies on the path's homotopy. Conversely, the term $$e^{-\mathbb{g}{\Omega}}$$, which corresponds to the quantum metric, is sensitive to the specific details of the path. For instance, when the particle traverses the same path multiple times, say $$n$$ times, the probability of it remaining in the original state becomes $$P=e^{-n\mathbb{g}{\Omega}}$$.
+Currently, it is evident that the amplitude of the term $$e^{-\mathbb{g}{\Omega}-i\gamma{\Omega}}$$ can decay over time or along a given path. The Berry phase, denoted as $$e^{-i\gamma_{\Omega}(t)}$$, relies on the path's homotopy. Conversely, the term $$e^{-\mathbb{g}{\Omega}}$$, which corresponds to the quantum metric, is sensitive to the specific details of the path. For instance, when the particle traverses the same path multiple times, say $$n$$ times, the probability of it remaining in the original state becomes $$P=e^{-n \mathbbf{g}_{\Omega}}$$.
 
 
 Locally, we can expand the distance for a infinitesimal change of
