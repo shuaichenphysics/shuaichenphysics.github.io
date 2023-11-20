@@ -19,7 +19,7 @@ $$
 H(\lambda)\vert\psi(\lambda)\rangle=E(\lambda)\vert\psi(\lambda)\rangle.
 $$
 
-The manifold is formed by the parameter-dependent ground wave functions. In their seminal paper, the authors introduced a Riemannian differential structure in the Hilbert space. Specifically, the Riemann structure is embedded in the Quantum Geometry Tensor (QGT) denoted as $$\mathfrak{G}$$. This tensor can be expressed using the following formula:
+The manifold is formed by the parameter-dependent ground wave functions. In their seminal paper, the authors introduced a Riemannian differential structure in the Hilbert spacei [^1]. Specifically, the Riemann structure is embedded in the Quantum Geometry Tensor (QGT) denoted as $$\mathfrak{G}$$. This tensor can be expressed using the following formula:
 
 $$
 \mathfrak{G}_{ab}(\lambda)=\langle\partial_{a}\psi(\lambda)\vert\partial_{b}\psi(\lambda)\vert-\langle\partial_{a}\psi(\lambda)\vert\psi(\lambda)\rangle\langle\psi(\lambda)\vert\partial_{b}\psi(\lambda)\rangle.
@@ -113,3 +113,5 @@ $$
 \mathcal{G}_{ab}=\mathrm{Re}[\langle\partial_{a}\psi(\lambda)\vert\partial_{b}\psi(\lambda)\vert-\langle\partial_{a}\psi(\lambda)\vert\psi(\lambda)\rangle\langle\psi(\lambda)\vert\partial_{b}\psi(\lambda)\rangle].
 $$
 
+
+[^1]: Riemannian structure on manifolds of quantum states, by [J. P. Provost and G. Vallee](https://link.springer.com/article/10.1007/BF02193559)
