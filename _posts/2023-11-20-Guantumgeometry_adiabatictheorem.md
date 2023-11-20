@@ -97,7 +97,7 @@ e^{-\mathbb{g}_{\Omega}-i\gamma_{\Omega}} & =e^{-\int\vert\langle\lambda(t_{i})\
 \end{align}
 $$
 
-Currently, it is evident that the amplitude of the term $$e^{-\mathbb{g}{\Omega}-i\gamma{\Omega}}$$ can decay over time or along a given path. The Berry phase, denoted as $$e^{-i\gamma_{\Omega}(t)}$$, relies on the path's homotopy. Conversely, the term $$e^{-\mathbb{g}{\Omega}}$$, which corresponds to the quantum metric, is sensitive to the specific details of the path. For instance, when the particle traverses the same path multiple times, say $$n$$ times, the probability of it remaining in the original state becomes $$P=e^{-n \mathbbf{g}_{\Omega}}$$.
+Currently, it is evident that the amplitude of the term $$e^{-\mathbb{g}{\Omega}-i\gamma{\Omega}}$$ can decay over time or along a given path. The Berry phase, denoted as $$e^{-i\gamma_{\Omega}(t)}$$, relies on the path's homotopy. Conversely, the term $$e^{-\mathbb{g}{\Omega}}$$, which corresponds to the quantum metric, is sensitive to the specific details of the path. For instance, when the particle traverses the same path multiple times, say $$n$$ times, the probability of it remaining in the original state becomes $$P=e^{-n \mathbb{g}_{\Omega}}$$.
 
 
 Locally, we can expand the distance for a infinitesimal change of
