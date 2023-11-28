@@ -210,8 +210,10 @@ $$
 A building block enters the calculation of the Cooper pair propagator
 >
 > $$
+>\begin{align}
 > \chi_{n, \mathbf{q}}^{\mathrm{c}} \equiv-\frac{T}{L^{d}} \sum_{m, \mathbf{p}} G_{0}\left(\mathbf{p}, i \omega_{m}\right) G_{0}\left(-\mathbf{p}+\mathbf{q},-i \omega_{m}+i \omega_{n}\right) \\
 > =\frac{1}{L^{d}} \sum_{\mathbf{p}} \frac{1-n_{\mathrm{F}}\left(\xi_{\mathbf{p}}\right)-n_{\mathrm{F}}\left(\xi_{-\mathbf{p}+\mathbf{q}}\right)}{i \omega_{n}-\xi_{\mathbf{p}}-\xi_{-\mathbf{p}+\mathbf{q}}}
+>\end{align}
 > $$
 >
 > 
