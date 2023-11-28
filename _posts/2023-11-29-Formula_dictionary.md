@@ -60,7 +60,9 @@ comments: true
 The eigenenergy appears as a solution to the equation
 
 $$
-\mathrm{Det}\left[\begin{pmatrix}\lambda &0\\0 & -\lambda    \end{pmatrix}-h\sigma_z\right]=0
+\mathrm{Det}\left[\begin{pmatrix}\lambda & 0 \\ 
+                                0 & -\lambda    \end{pmatrix} 
+                                -h\sigma_z\right]=0
 $$
 
 which  yields  the spectrum function for the canonical modes $$\alpha,\beta$$
