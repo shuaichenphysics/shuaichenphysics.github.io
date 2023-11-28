@@ -159,7 +159,7 @@ $$
 with 
 
 $$
-\begin{aligned}
+\begin{align}
 &{\left[\begin{array}{c}
 \gamma_{\boldsymbol{k}, \uparrow} \\
 \gamma_{-\boldsymbol{k}, \downarrow}^{\dagger}
@@ -180,7 +180,7 @@ u_{\boldsymbol{k}} & v_{\boldsymbol{k}} e^{i \varphi} \\
 \gamma_{\boldsymbol{k}, \uparrow} \\
 \gamma_{-\boldsymbol{k}, \downarrow}^{\dagger}
 \end{array}\right] .}
-\end{aligned}
+\end{align}
 $$
 
 
@@ -196,12 +196,19 @@ $$
 |\mathrm{BCS}\rangle = \prod_k\gamma_{k,\uparrow}\gamma_{k\downarrow}|\Omega\rangle\sim\prod_{k}(u_k+v_k c_{k,\uparrow}^\dagger c_{-k\downarrow}^\dagger)|\Omega\rangle
 $$
 
-with $$|\Omega\rangle$$ being the vacuum i.g. a fermi sea with a Fermi surface. We can expect it from 
+with $$|\Omega\rangle$$ being the vacuum i.g. a Fermi sea with a Fermi surface. 
+We can expect it for any $$ k,\sigma$$, with
 
 $$
-\gamma_{k,\sigma}|\mathrm{BCS}\rangle =0\quad \forall k,\sigma
+\gamma_{k,\sigma}|\mathrm{BCS}\rangle =0
 $$
 
+With the BCS ground state, one can evaluate the expectation value 
+
+$$
+\langle c^\dagger_{k,\uparrow}c_{k,\uparrow}\rangle=\langle c^\dagger_{k,\downarrow}c_{k,\downarrow} \rangle = \upsilon_k^2 \\
+\langle c^\dagger_{k,\uparrow}c^\dagger_{-k,\downarrow}\rangle = u_kv_k
+$$
 
 # Matsubara Summation 
 
@@ -224,23 +231,26 @@ $$
 G_0(\mathbf p,i\omega_m)=\frac{1}{i\omega_m-\xi_\mathbf p}
 $$
 
-and $$\omega_m = (2m+1)\pi T $$ are **fermionic Matsubara frequencies**, while $$\omega_n =2\pi nT$$ is a **bosonic Matsubara frequency**. 
+and $$\omega_m = (2m+1)\pi T $$ are **fermionic Matsubara frequencies**,
+while $$\omega_n =2\pi nT$$ is a **bosonic Matsubara frequency**. 
 
 **Density-Density response function $$\chi^d_{\mathbf q,\omega_n}$$**
 
 >
 > $$
-> \chi_{\mathbf{q}, \omega_{n}}^{\mathrm{d}} \equiv-\frac{T}{L^{d}} \sum_{\mathbf{p}, \omega_{m}} G_{0}\left(\mathbf{p}, i \omega_{m}\right) G_{0}\left(\mathbf{p}+\mathbf{q}, i \omega_{m}+i \omega_{n}\right) \\=-\frac{1}{L^{d}} \sum_{\mathbf{p}} \frac{n_{\mathrm{F}}\left(\xi_{\mathbf{p}}\right)-n_{\mathrm{F}}\left(\xi_{\mathbf{p}+\mathbf{q}}\right)}{i \omega_{n}+\xi_{\mathbf{p}}-\xi_{\mathbf{p}+\mathbf{q}}}
+>\begin{align}
+>& \chi_{\mathbf{q}, \omega_{n}}^{\mathrm{d}} \equiv-\frac{T}{L^{d}} \sum_{\mathbf{p}, \omega_{m}} G_{0}\left(\mathbf{p}, i \omega_{m}\right) G_{0}\left(\mathbf{p}+\mathbf{q}, i \omega_{m}+i \omega_{n}\right) \\
+>= & -\frac{1}{L^{d}} \sum_{\mathbf{p}} \frac{n_{\mathrm{F}}\left(\xi_{\mathbf{p}}\right)-n_{\mathrm{F}}\left(\xi_{\mathbf{p}+\mathbf{q}}\right)}{i \omega_{n}+\xi_{\mathbf{p}}-\xi_{\mathbf{p}+\mathbf{q}}}
+>\end{align}
 > $$
 >
 > 
 
 In real calculation, we often take the static limit. That is 
-
 >
 > $$
 >(\mathbf q,\omega_n)\rightarrow (\mathbf q,0)
->$$
+> $$
 >
 
 It is convenient to change from an explicit matrix representation of the Gorkov Green function to an expression in terms of the Pauli matrices
@@ -249,7 +259,7 @@ $$
 \mathcal G_{0,p}=\frac{1}{i\sigma_0\omega_n-\sigma_3 \xi_p+\sigma_1\Delta_0}=\frac{-i\sigma_0\omega_n-\sigma_3\xi_p+\sigma_1\Delta_0}{\omega_n^2+\xi_p^2+\Delta_0^2}
 $$
 
-Where the Gorkov Green function takes the form as 
+where the Gorkov Green function takes the form as 
 
 $$
 \mathcal G^{-1}=\begin{pmatrix}-\partial_\tau-i\phi-\frac{1}{2m}(-i\nabla-\mathbf A)^2+\mu & \Delta_0e^{2i\theta} \\
@@ -260,15 +270,19 @@ $$
 On the other hand we have the expansion 
 
 $$
-\mathcal G^{-1}=-\sigma_0\partial_\tau-\sigma_3 (i\phi+\frac{1}{2m}(-i\nabla-\sigma_3\mathbf A)^2-\mu)+\sigma_1\Delta_0 \\
-=-\sigma_0\partial_\tau -\sigma_3 (-\frac{\nabla^2}{2m}-\mu)+\sigma_1\Delta_0-i\sigma_3\phi+\frac{i}{2m}\sigma_0[\nabla,\mathbf A]_+-\sigma_3\frac{1}{2m}\mathbf A^2
+\begin{align}
+\mathcal G^{-1} & =-\sigma_0\partial_\tau-\sigma_3 (i\phi+\frac{1}{2m}(-i\nabla-\sigma_3\mathbf A)^2-\mu)+\sigma_1\Delta_0 \\
+& =-\sigma_0\partial_\tau -\sigma_3 (-\frac{\nabla^2}{2m}-\mu)+\sigma_1\Delta_0-i\sigma_3\phi+\frac{i}{2m}\sigma_0[\nabla,\mathbf A]_+-\sigma_3\frac{1}{2m}\mathbf A^2
+\end{align}
 $$
 
 > * Gorkov Green function 
 >
 >   $$
->   G_{0,p}=\frac{u_k^2}{\omega - \epsilon_k}+\frac{v_k^2}{\omega+\epsilon_k}\\
->   F_{0,p}=u_kv_k\frac{2\omega}{\omega^2+\epsilon_k^2}
+>   \begin{align}
+>   G_{0,p} & =\frac{u_k^2}{\omega - \epsilon_k}+\frac{v_k^2}{\omega+\epsilon_k}\\
+>   F_{0,p} & =u_kv_k\frac{2\omega}{\omega^2+\epsilon_k^2}
+>   \end{align}
 >   $$
 >
 
