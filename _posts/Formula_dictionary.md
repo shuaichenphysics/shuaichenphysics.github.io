@@ -1,6 +1,16 @@
-# Bogoliubov transformation
+---
+layout: post
+title: "Formula reference"
+date: 2023-11-29
+excerpt: "Summarize the common formula"
+tags: [General Physics]
+comments: true
+---
 
 [toc]
+
+# Bogoliubov transformation
+
 
 ## Basics for bosons
 
