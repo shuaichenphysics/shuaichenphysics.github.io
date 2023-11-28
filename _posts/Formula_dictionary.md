@@ -60,7 +60,7 @@ comments: true
 The eigenenergy appears as a solution to the equation
 
 $$
-\operatorname{Det}\left[\begin{pmatrix}\lambda &0\\0 & -\lambda    \end{pmatrix}-h\sigma_z\right]=0
+\mathrm{Det}\left[\begin{pmatrix}\lambda &0\\0 & -\lambda    \end{pmatrix}-h\sigma_z\right]=0
 $$
 
 which  yields  the spectrum function for the canonical modes $$\alpha,\beta$$
@@ -236,7 +236,9 @@ and $$\omega_m = (2m+1)\pi T $$ are **fermionic Matsubara frequencies**, while $
 In real calculation, we often take the static limit. That is 
 
 >
-> $$(\mathbf q,\omega_n)\rightarrow (\mathbf q,0)$$
+> $$
+>(\mathbf q,\omega_n)\rightarrow (\mathbf q,0)
+>$$
 >
 
 It is convenient to change from an explicit matrix representation of the Gorkov Green function to an expression in terms of the Pauli matrices
