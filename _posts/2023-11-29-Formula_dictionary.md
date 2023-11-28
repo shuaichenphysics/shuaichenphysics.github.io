@@ -198,7 +198,7 @@ $$
 |\mathrm{BCS}\rangle = \prod_k\gamma_{k,\uparrow}\gamma_{k\downarrow}|\Omega\rangle\sim\prod_{k}(u_k+v_k c_{k,\uparrow}^\dagger c_{-k\downarrow}^\dagger)|\Omega\rangle
 $$
 
-with $$|\Omega\rangle$$ being the vacuum i.g. a Fermi sea with a Fermi surface. 
+with $$ \vert\Omega\rangle$$ being the vacuum i.g. a Fermi sea with a Fermi surface. 
 We can expect it for any $$ k,\sigma$$, with
 
 $$
@@ -216,7 +216,7 @@ $$
 
 # Matsubara Summation 
 
-**Pair Correlation function $$\chi_{n,\mathbf q}^c$$**
+**Pair Correlation function $$\chi_{n,\mathbf q}^c $$**
 
 A building block enters the calculation of the Cooper pair propagator
 >
