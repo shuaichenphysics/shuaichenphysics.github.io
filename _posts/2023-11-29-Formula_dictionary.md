@@ -208,8 +208,10 @@ $$
 With the BCS ground state, one can evaluate the expectation value 
 
 $$
-\langle c^\dagger_{k,\uparrow}c_{k,\uparrow}\rangle=\langle c^\dagger_{k,\downarrow}c_{k,\downarrow} \rangle = \upsilon_k^2 \\
-\langle c^\dagger_{k,\uparrow}c^\dagger_{-k,\downarrow}\rangle = u_kv_k
+\begin{align}
+& \langle c^\dagger_{k,\uparrow}c_{k,\uparrow}\rangle=\langle c^\dagger_{k,\downarrow}c_{k,\downarrow} \rangle = \upsilon_k^2  \\ 
+& \langle c^\dagger_{k,\uparrow}c^\dagger_{-k,\downarrow}\rangle = u_k v_k
+\end{align}
 $$
 
 # Matsubara Summation 
