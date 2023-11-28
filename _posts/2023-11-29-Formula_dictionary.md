@@ -138,7 +138,7 @@ The case for a system of fermions are much simple and we can just apply the unit
 Consider a BdG Hamiltonian  (__Please double check the sign before the order parameter!!!__)
 
 $$
-\begin{aligned}
+\begin{align}
 \mathcal{H}_{\mathrm{MF}} &=\sum_{k, \alpha} \xi_{k} c_{k, \alpha}^{\dagger} c_{k, \alpha}-\sum_{k}^{\prime}\left[\Delta e^{-i \varphi} c_{k, \uparrow} c_{-k, \downarrow}+\Delta e^{i \varphi} c_{-k, \downarrow}^{\dagger} c_{k, \uparrow}^{\dagger}\right]+\frac{V_{\mathrm{vol}} \Delta^{2}}{g} \\
 &=\sum_{k}\left[c_{k, \uparrow}^{\dagger}, c_{-k, \downarrow}\right]\left[\begin{array}{cc}
 \xi_{k} & \Delta e^{i \varphi} \\
@@ -147,7 +147,7 @@ $$
 c_{k, \uparrow} \\
 c_{-k, \downarrow}^{\dagger}
 \end{array}\right]+\frac{V_{\mathrm{vol}} \Delta^{2}}{g}
-\end{aligned}
+\end{align}
 $$
 
 Then 
