@@ -26,7 +26,7 @@ $$
 \mathbf{j}(\mathbf{k})=\sum_{\sigma}\nabla\xi(\mathbf{k})c_{\mathbf{k}\sigma}^{\dagger}c_{\mathbf{k}\sigma}
 $$
 
-One should confuse the current of an electron with the current of
+One should not confuse the current of an electron with the current of
 a quasiparticle. From the Landau's Fermi liquid theory, we can learn
 that the current of quasiparticles can get renormalized by interaction
 or orbital hybridization.
@@ -111,9 +111,9 @@ of excitations. The first one is the Fermionic Bogolibov quasiparticle
 $$\gamma_{\mathbf{k}\sigma}^{\dagger}\vert\mathrm{BCS}\rangle$$ with
 an energy $$E=E_{GS}+E(\mathbf{k})$$. It has a finite energy gap. In
 fact, we have the second type of excitation, that is the gapless Bosonic
-Goldstone mode.In fact, it will cost at least energy $$2\Delta$$ to
+Goldstone mode. By contrast it will cost at least energy $$2\Delta$$ to
 create a Cooper pair state $$\gamma_{\mathbf{k}\uparrow}^{\dagger}\gamma_{\mathbf{-k}\downarrow}^{\dagger}\vert\mathrm{BCS}\rangle$$,
-which can be taken as local excitations. Instead, to pursue the Goldstone
+which can be taken as local excitations (in momentum space). Instead, to pursue the Goldstone
 mode, we can consider a new mean-field ansatz
 
 $$
