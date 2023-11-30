@@ -46,7 +46,7 @@ comments: true
   \end{align}
   $$
 
-  When formulated into matrix form
+  when formulated into matrix form
 
   $$
   h= \begin{pmatrix} 
@@ -79,7 +79,7 @@ $$
 \end{align}
 $$
 
-where $$\Delta=|\Delta|e^{i\theta}$$. As matter of fact, the case we often meet is that $$a_{k},a_{-k}^\dagger$$ in the original Hamiltonian, in which, we have 
+where $$\Delta=\vert\Delta\vert e^{i\theta}$$. As matter of fact, the case we often meet is that $$a_{k},a_{-k}^\dagger$$ in the original Hamiltonian, in which, we have 
 
 $$
 \begin{align}
