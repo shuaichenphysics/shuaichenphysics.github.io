@@ -89,49 +89,49 @@ $$
 $$
 
 
-> ==Remark==
->
-> For  a quantum field theory, the diagnolization procedures have some sublattices compared with the case above. For example, a scalar field with Hamiltonian 
->
-> $$
-> \mathcal L = \frac{1}{2}\partial_0 \phi \partial _0\phi-\frac{1}{2}\nabla\phi\nabla\phi
-> $$
->
-> has a quadratic time derivative. __However, in such a system, a unitary transformation cannot  diagonalize it__. Of course, one may introduce canonical creation and annihilation operators with the time derivative of order 1. We first derive the canonical quantization relation 
->
-> $$
-> \pi =\frac{\delta\mathcal L}{\delta \partial_0\phi}= \partial_0\phi 
-> $$
->
-> which the Hamiltonian 
->
-> $$
-> H=\pi \partial_0\phi-L=\frac{1}{2}(\pi^2+\nabla\phi\nabla\phi)
-> $$
->
-> We introduce the raising and lowering operators
->
-> $$
-> \begin{align}
-> a^\dagger &=\frac{1}{\sqrt{2|\mathbf k|}}(\pi+i|\mathbf k|\phi)\\
-> a &=\frac{1}{\sqrt{2|\mathbf k|}}(\pi-i|\mathbf k|\phi)
-> \end{align}
-> $$
->
-> which gives the Hamiltonian
->
-> $$
-> H=|\mathbf k|a^\dagger(\mathbf k)a(\mathbf k)+\frac{1}{2}|\mathbf k|
-> $$
->
-> Another example is the QED for which one has to introduce
->
-> $$
-> A_i(k)= \frac{\xi_i(k)}{\sqrt{\mathbf k^2}}(a_\mathbf k^\dagger+ia_\mathbf k)
-> $$
->
-> with $$\xi_i(\mathbf k)$$ being the polarized vector. 
-> 
+ ==Remark==
+
+ For  a quantum field theory, the diagnolization procedures have some sublattices compared with the case above. For example, a scalar field with Hamiltonian 
+
+ $$
+ \mathcal L = \frac{1}{2}\partial_0 \phi \partial _0\phi-\frac{1}{2}\nabla\phi\nabla\phi
+ $$
+
+ has a quadratic time derivative. __However, in such a system, a unitary transformation cannot  diagonalize it__. Of course, one may introduce canonical creation and annihilation operators with the time derivative of order 1. We first derive the canonical quantization relation 
+
+ $$
+ \pi =\frac{\delta\mathcal L}{\delta \partial_0\phi}= \partial_0\phi 
+ $$
+
+ which the Hamiltonian 
+
+ $$
+ H=\pi \partial_0\phi-L=\frac{1}{2}(\pi^2+\nabla\phi\nabla\phi)
+ $$
+
+ We introduce the raising and lowering operators
+
+ $$
+ \begin{align}
+ a^\dagger &=\frac{1}{\sqrt{2|\mathbf k|}}(\pi+i|\mathbf k|\phi)\\
+ a &=\frac{1}{\sqrt{2|\mathbf k|}}(\pi-i|\mathbf k|\phi)
+ \end{align}
+ $$
+
+ which gives the Hamiltonian
+
+ $$
+ H=|\mathbf k|a^\dagger(\mathbf k)a(\mathbf k)+\frac{1}{2}|\mathbf k|
+ $$
+
+ Another example is the QED for which one has to introduce
+
+ $$
+ A_i(k)= \frac{\xi_i(k)}{\sqrt{\mathbf k^2}}(a_\mathbf k^\dagger+ia_\mathbf k)
+ $$
+
+ with $$\xi_i(\mathbf k)$$ being the polarized vector. 
+ 
 
 ## Basic Fermion
 
@@ -218,15 +218,14 @@ $$
 **Pair Correlation function $$\chi_{n,\mathbf q}^c $$**
 
 A building block enters the calculation of the Cooper pair propagator
->
-> $$
->\begin{align}
-> \chi_{n, \mathbf{q}}^{\mathrm{c}} \equiv-\frac{T}{L^{d}} \sum_{m, \mathbf{p}} G_{0}\left(\mathbf{p}, i \omega_{m}\right) G_{0}\left(-\mathbf{p}+\mathbf{q},-i \omega_{m}+i \omega_{n}\right) \\
-> =\frac{1}{L^{d}} \sum_{\mathbf{p}} \frac{1-n_{\mathrm{F}}\left(\xi_{\mathbf{p}}\right)-n_{\mathrm{F}}\left(\xi_{-\mathbf{p}+\mathbf{q}}\right)}{i \omega_{n}-\xi_{\mathbf{p}}-\xi_{-\mathbf{p}+\mathbf{q}}}
->\end{align}
-> $$
->
-> 
+
+ $$
+\begin{align}
+ \chi_{n, \mathbf{q}}^{\mathrm{c}} \equiv-\frac{T}{L^{d}} \sum_{m, \mathbf{p}} G_{0}\left(\mathbf{p}, i \omega_{m}\right) G_{0}\left(-\mathbf{p}+\mathbf{q},-i \omega_{m}+i \omega_{n}\right) \\
+ =\frac{1}{L^{d}} \sum_{\mathbf{p}} \frac{1-n_{\mathrm{F}}\left(\xi_{\mathbf{p}}\right)-n_{\mathrm{F}}\left(\xi_{-\mathbf{p}+\mathbf{q}}\right)}{i \omega_{n}-\xi_{\mathbf{p}}-\xi_{-\mathbf{p}+\mathbf{q}}}
+\end{align}
+ $$
+ 
 
 where (around the transition point)
 
@@ -239,22 +238,22 @@ while $$\omega_n =2\pi nT$$ is a **bosonic Matsubara frequency**.
 
 **Density-Density response function $$\chi^d_{\mathbf q,\omega_n}$$**
 
->
-> $$
->\begin{align}
->& \chi_{\mathbf{q}, \omega_{n}}^{\mathrm{d}} \equiv-\frac{T}{L^{d}} \sum_{\mathbf{p}, \omega_{m}} G_{0}\left(\mathbf{p}, i \omega_{m}\right) G_{0}\left(\mathbf{p}+\mathbf{q}, i \omega_{m}+i \omega_{n}\right) \\
->= & -\frac{1}{L^{d}} \sum_{\mathbf{p}} \frac{n_{\mathrm{F}}\left(\xi_{\mathbf{p}}\right)-n_{\mathrm{F}}\left(\xi_{\mathbf{p}+\mathbf{q}}\right)}{i \omega_{n}+\xi_{\mathbf{p}}-\xi_{\mathbf{p}+\mathbf{q}}}
->\end{align}
-> $$
->
-> 
+
+ $$
+\begin{align}
+& \chi_{\mathbf{q}, \omega_{n}}^{\mathrm{d}} \equiv-\frac{T}{L^{d}} \sum_{\mathbf{p}, \omega_{m}} G_{0}\left(\mathbf{p}, i \omega_{m}\right) G_{0}\left(\mathbf{p}+\mathbf{q}, i \omega_{m}+i \omega_{n}\right) \\
+= & -\frac{1}{L^{d}} \sum_{\mathbf{p}} \frac{n_{\mathrm{F}}\left(\xi_{\mathbf{p}}\right)-n_{\mathrm{F}}\left(\xi_{\mathbf{p}+\mathbf{q}}\right)}{i \omega_{n}+\xi_{\mathbf{p}}-\xi_{\mathbf{p}+\mathbf{q}}}
+\end{align}
+ $$
+
+ 
 
 In real calculation, we often take the static limit. That is 
->
-> $$
->(\mathbf q,\omega_n)\rightarrow (\mathbf q,0)
-> $$
->
+
+ $$
+(\mathbf q,\omega_n)\rightarrow (\mathbf q,0)
+ $$
+
 
 It is convenient to change from an explicit matrix representation of the Gorkov Green function to an expression in terms of the Pauli matrices
 
@@ -279,15 +278,15 @@ $$
 \end{align}
 $$
 
-> * Gorkov Green function 
->
->   $$
->   \begin{align}
->   G_{0,p} & =\frac{u_k^2}{\omega - \epsilon_k}+\frac{v_k^2}{\omega+\epsilon_k}\\
->   F_{0,p} & =u_kv_k\frac{2\omega}{\omega^2+\epsilon_k^2}
->   \end{align}
->   $$
->
+* Gorkov Green function 
+
+  $$
+  \begin{align}
+   G_{0,p} & =\frac{u_k^2}{\omega - \epsilon_k}+\frac{v_k^2}{\omega+\epsilon_k}\\
+   F_{0,p} & =u_kv_k\frac{2\omega}{\omega^2+\epsilon_k^2}
+   \end{align}
+   $$
+
 
 
 
@@ -296,31 +295,31 @@ $$
 ## Conventions for Fourier transformation
 
 * Fermionic operator (N is the lattice number)
-  >
-  >$$
-  >\begin{align}
-  >c(r)&=\frac{1}{\sqrt{N}}\sum_{k}c_{k}e^{ik\cdot r}\\
-  >c(k)&=\frac{1}{\sqrt{N}}\sum_{r}c(r)e^{-ik\cdot r}
-  >\end{align}
-  >$$
-  >
+  
+  $$
+  \begin{align}
+  c(r)&=\frac{1}{\sqrt{N}}\sum_{k}c_{k}e^{ik\cdot r}\\
+  c(k)&=\frac{1}{\sqrt{N}}\sum_{r}c(r)e^{-ik\cdot r}
+  \end{align}
+  $$
+  
 
 * Order parameter formed by two Fermion operator
 
-  > For the superconducting order parameter  $$\Delta(r)=c_\uparrow(r)c_\downarrow(r) $$
-  >
-  > $$
-  > \Delta (k) = \sum_r \Delta(r)e^{ik\cdot r}
-  > $$
-  >
+   For the superconducting order parameter  $$\Delta(r)=c_\uparrow(r)c_\downarrow(r) $$
+  
+   $$
+   \Delta (k) = \sum_r \Delta(r)e^{ik\cdot r}
+   $$
+  
 
 * Function
-  >
-  > $$
-  > \begin{align}
-  > f(r)	&=\sum_{k}f(k)e^{ik\cdot r} \\
-  > f(k)	&=\frac{1}{N}\sum_{r}f(r)e^{-ik\cdot r}
-  > \end{align}
-  > $$
-  >
-  > 
+  
+   $$
+   \begin{align}
+   f(r)	&=\sum_{k}f(k)e^{ik\cdot r} \\
+   f(k)	&=\frac{1}{N}\sum_{r}f(r)e^{-ik\cdot r}
+   \end{align}
+   $$
+  
+   
