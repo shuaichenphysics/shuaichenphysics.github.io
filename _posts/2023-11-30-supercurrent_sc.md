@@ -2,7 +2,7 @@
 layout: post
 title: "Supercurrent from a mean-field theory in superconductivity"
 date: 2023-11-30
-excerpt: "Why does supercurrent supercurrent?"
+excerpt: "Why is supercurrent supercurrent?"
 tags: [Superconductivity]
 comments: true
 ---
