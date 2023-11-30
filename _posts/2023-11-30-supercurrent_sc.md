@@ -212,6 +212,6 @@ $$
 D_{s}=\frac{n_{s}}{m}
 $$
 
-The supercurrent in a superconductor is considered global because it involves the integral over all momentum states. In other words, the state represented by |BCS(q)⟩, which consists of Bogoliubov quasiparticles, undergoes a change in its wave function throughout the entire system, indicating a global excitation.
+The supercurrent in a superconductor is considered global because it involves the integral over all momentum states. In other words, the state represented by $$ \vert \mathrm{BCS}(\mathbf q)\rangle$$, which consists of Bogoliubov quasiparticles, undergoes a change in its wave function throughout the entire system, indicating a global excitation.
 
 In contrast, in a Fermi liquid theory, when an electron is excited from the Fermi surface, it carries charge currents that involve only a single momentum point on the Fermi surface. Therefore, we can consider this type of current as local, as it is confined to a specific region or point in the system.
