@@ -41,19 +41,18 @@ comments: true
 
   $$
   \begin{align}
-  [\alpha,\alpha^\dagger]&=[M_{11}a,M_{11}^*a^\dagger]+[M_{12}b^\dagger,M_{12}^*b]\notag \\
-    &=|M_{11}|^2-|M_{12}|^2=1 \\
-    [\beta,\beta^\dagger]&=|M_{22}|^2-|M_{11}|^2=1
+  [\alpha,\alpha^\dagger]& =[M_{11}a,M_{11}^*a^\dagger]+[M_{12}b^\dagger,M_{12}^*b]=|M_{11}|^2-|M_{12}|^2=1 \\
+  [\beta,\beta^\dagger]&=|M_{22}|^2-|M_{11}|^2=1
   \end{align}
   $$
 
   When formulated into matrix form
 
   $$
-  h=\begin{pmatrix} 
-   \epsilon_0 & \Delta \\
-   \Delta^* & \epsilon_0
-  \end{pmatrix}
+  h= \begin{pmatrix} 
+   \epsilon_0 &  \Delta  \\
+   \Delta^*   &  \epsilon_0
+   \end{pmatrix}
   $$
   
 
