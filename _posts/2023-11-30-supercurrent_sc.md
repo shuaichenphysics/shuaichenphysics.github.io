@@ -32,10 +32,10 @@ that the current of quasiparticles can get renormalized by interaction
 or orbital hybridization.
 
 We can apply the mean-field theory to obtain an ansatz for a ground
-state.We can make a mean-field ansatz by assuming 
+state. We can make a mean-field ansatz by assuming 
 
 $$
-\Delta=-\frac{1}{V}\int dr\langle c_{\downarrow}(r)c_{\uparrow}(r)\rangle=-\frac{1}{V}\int\frac{dk}{(2\pi)^{d}}\langle c_{-\mathbf{k}\downarrow}c_{\mathbf{k}\uparrow}\rangle
+\Delta=-\frac{1}{V}\int dr\langle c_{\downarrow}(r)c_{\uparrow}(r)\rangle=-\frac{1}{V}\sum_k\langle c_{-\mathbf{k}\downarrow}c_{\mathbf{k}\uparrow}\rangle
 $$
 
 Then we obtain a mean-field Hamiltonian $$H_{MF}$$
@@ -45,7 +45,7 @@ H_{MF}(\mathbf{k})=\sum_{\sigma}\xi(\mathbf{k})c_{\mathbf{k}\sigma}^{\dagger}c_{
 $$
 
 where we make a proper gauge choice such that the order parameter
-$$\Delta$$ be a real number.We can diagonalize the mean-field Hamiltonian
+$$\Delta$$ be a real number. We can diagonalize the mean-field Hamiltonian
 
 $$
 H_{MF}(\mathbf{k})=E(\mathbf{k})\left[\gamma_{\mathbf{k}\uparrow}^{\dagger}\gamma_{\mathbf{k}\uparrow}+\gamma_{\mathbf{k}\downarrow}^{\dagger}\gamma_{\mathbf{k}\downarrow}\right]
@@ -106,7 +106,7 @@ $$
 $$
 
 
-We need an excited state to see the supercurrents. There are two types
+We need an excited state to show the supercurrents. There are two types
 of excitations. The first one is the Fermionic Bogolibov quasiparticle
 $$\gamma_{\mathbf{k}\sigma}^{\dagger}\vert\mathrm{BCS}\rangle$$ with
 an energy $$E=E_{GS}+E(\mathbf{k})$$. It has a finite energy gap. In
@@ -117,7 +117,7 @@ which can be taken as local excitations (in momentum space). Instead, to pursue 
 mode, we can consider a new mean-field ansatz
 
 $$
-\Delta_{\mathbf{q}}=\langle c_{-\mathbf{k}\downarrow}c_{\mathbf{k}+\mathbf{q}\uparrow}\rangle
+\Delta_{\mathbf{q}}=\frac{1}{V}\sum_k\langle c_{-\mathbf{k}\downarrow}c_{\mathbf{k}+\mathbf{q}\uparrow}\rangle
 $$
 
 or in the real space 
